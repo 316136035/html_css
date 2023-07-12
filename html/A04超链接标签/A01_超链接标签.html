@@ -10,7 +10,7 @@
     <!-- Edge 模式通知 Windows Internet Explorer 以最高级别的可用模式显示内容 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 头标题 -->
-    <title>A04 _块级元素和行内元素区别</title>
+    <title>A01_超链接标签</title>
     <!-- 设置网站图标调用一个外部的图片文件 -->
     <link rel="shortcut icon" href="../../resource资源文件/img/favicon.ico" type="image/x-icon" />
     <!-- 调用一个外部的CSS样式文件 -->
@@ -18,33 +18,11 @@
 </head>
 
 <body>
-    <!-- 块级元素  特点：块级元素独占一行-->
-    <h1>块级元素1</h1>
-    <div>块级元素2</div>
-    <p>块级元素3</p>
-    <hr>
-
-    <!-- 行内元素 特点：行内元素不独占一行-->
-    <input type="text" placeholder="行内元素1">
-    <button>行内元素2</button>
-    <span>行内元素3</span>
-    <hr>
-    <!--块级元素中可以写行内元素和块级元素（几乎到能写）  -->
-    <div>
-        <div>块级元素</div>
-        <input type="text" placeholder="行内元素1">
-    </div>
-    <hr>
-    <!--行内元素中可以写行内元素，不能写块级元素  -->
-    <span>
-        <span>行内元素1</span>
-        <span>行内元素2</span>
-        <span>行内元素3</span>
-    </span>
-
-
-
-
-
+    <!-- 超链接标签 跳转有页面 -->
+    <a href="https://www.w3school.com.cn/" target="_blank">w3school新的页签打开</a> <br>
+    <a href="https://www.w3school.com.cn/" target="_self">w3school当前页签打开</a> <br>
+    <a href="../A01基础标签/A01_html标准结构.html" target="_self">A01_html标准结构--当前页签打开</a> <br>
+  
+</body>
 
 </html>
