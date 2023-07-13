@@ -10,7 +10,7 @@
     <!-- Edge 模式通知 Windows Internet Explorer 以最高级别的可用模式显示内容 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 头标题 -->
-    <title>A04_隐藏域-文件选择框</title>
+    <title>A05_文本域-下拉选择框</title>
     <!-- 设置网站图标调用一个外部的图片文件 -->
     <link rel="shortcut icon" href="../../resource资源文件/img/favicon.ico" type="image/x-icon" />
     <!-- 调用一个外部的CSS样式文件 -->
@@ -21,23 +21,29 @@
     <div>
         <!--form表单  action="请求地址"    method="请求方式"-->
         <form action="#" method="get">
-            <div>
-                <!--页面不显示   name="用于服务器取值key 用于防止恶意请求-->
-                <input type="hidden" name="hidden" value="estwterhery">
-                <!--上传文件   name="用于服务器取值key 用于防止恶意请求-->
-                <input type="file" name="file">
-
-                <!--普通按钮 这种按钮不会提交表单-->
-                <button type="button">普通按钮 这种按钮不会提交表单</button>
+          
+                <!--textarea多行的文本输入控件 
+                name="用于服务器取值key
+                autofocus页面加载后文本区域自动获得焦点
+                cols="1"文本区内的宽度
+                rows="30" 文本区内的高度
+                 -->
+                 <textarea name="textarea" autofocus="" cols="50" rows="20">多行的文本输入控件</textarea>
+                <hr>
+                <!--section下拉选择框-->
+                下拉选择框：
+                <select name="selected">
+                    <option value="河北省">河北省</option>
+                    <option value="江苏省">江苏省</option>
+                    <option value="广东省">广东省</option>
+                    <option value="辽宁省">辽宁省</option>
+                    <option value="云南省">云南省</option>
+                </select>
                 <!--提交按钮1-->
                 <button>提交按钮1</button>
-                <!--提交按钮2-->
-                <input type="submit" value="提交按钮2">
-                <!--重置按钮-->
-                <input type="reset" value="重置按钮">
 
+            
 
-            </div>
         </form>
 
     </div>
