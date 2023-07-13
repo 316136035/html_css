@@ -27,12 +27,14 @@
             cellspacing="单元格之间的距离" 
             cellpadding="边框与其内容之间的空白距离"-->
         <table border="1" width="500" height="300" cellspacing="0" cellpadding="5">
-            <!-- 表格标题 -->
+            <!-- caption表格标题 -->
             <caption>表格标题</caption>
-            <!-- thead 表格头部  height="宽度"  
+            <!-- thead 表格头部  
+                height="高度"  
                 align="表格行的内容对齐方式right/left/center/justify/char" 
-                valign="表格行中内容的垂直对齐方式top/middle/bottom/baseline" -->
-            <thead height="50" align="right" valign="top">
+                valign="表格行中内容的垂直对齐方式top/middle/bottom/baseline" 
+            -->
+            <thead height="50" align="center" valign="middle">
                 <!-- 表格头部行 -->
                 <tr>
                     <!-- 表格头部列 -->
@@ -42,12 +44,25 @@
                     <th>地址</td>
                 </tr>
             </thead>
-            <!-- 表格主体 -->
-            <tbody>
-                <!-- 表格主体行 -->
-                <tr>
-                    <!-- 表格主体列 -->
-                    <td>张三</td>
+            <!-- tbody 表格主体 
+                height="高度"  
+                align="表格行的内容对齐方式right/left/center/justify/char" 
+                valign="表格行中内容的垂直对齐方式top/middle/bottom/baseline"  
+            -->
+            <tbody height="300"  align="left" valign="middle" >
+                <!-- tr表格主体行 
+                height="高度"  
+                align="表格行的内容对齐方式right/left/center/justify/char" 
+                valign="表格行中内容的垂直对齐方式top/middle/bottom/baseline"
+                -->
+                <tr  height="10"  align="left" valign="middle">
+                    <!-- td表格主体列
+                    width="宽度" 
+                    height="高度"
+                    align="表格行的内容对齐方式right/left/center/justify/char" 
+                    valign="表格行中内容的垂直对齐方式top/middle/bottom/baseline"
+                    -->
+                    <td width="100" height="50">张三</td>
                     <td>男</td>
                     <td>18</td>
                     <td>广东省</td>
@@ -75,8 +90,12 @@
                 </tr>
 
             </tbody>
-            <!-- 表格脚注（底部） -->
-            <tfoot>
+            <!-- tfoot表格脚注（底部）
+              height="宽度"  
+                align="表格行的内容对齐方式right/left/center/justify/char" 
+                valign="表格行中内容的垂直对齐方式top/middle/bottom/baseline" 
+            -->
+            <tfoot height="50" align="center" valign="middle">
                 <td></td>
                 <td></td>
                 <td></td>
