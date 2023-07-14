@@ -9,26 +9,31 @@
     <style type="text/css">
         .class1 {
             /* 高度 */
-            height: 20px;
+            height: 30px;
             /* 宽度 */
             width: 30%;
             /* 背景颜色 */
             background-color: powderblue;
+            /* 字体大小 */
+            font-size: 20px;
 
         }
     </style>
     <!-- 使用CSS方式三（外部样式）
     href代表引入文本.css  type代表类型 - rel代表样式--->
-    <link href="../css/A01_使用css的三种方式.css" type="text/css" rel="stylesheet">
+    <link href="../css/A01_使用css的三种方式.css"  rel="stylesheet">
 </head>
+
 
 <body>
     <!-- 使用CSS方式一（行内样式）-->
-    <div style="color: chartreuse;height:20px;width: 20%; background-color:royalblue"> 使用CSS方式一（行内样式）</div>
+    <div style="color: chartreuse;height:20px;width: 20%; background-color:royalblue; font-size: 10px;"> 使用CSS方式一（行内样式）</div>
     <!-- 使用CSS方式二（内部样式） -->
     <div class="class1"> 使用CSS方式二（内部样式）</div>
       <!-- 使用CSS方式三（外部样式） -->
     <div id="id1"> 使用CSS方式三（外部样式）</div>
+      <!-- 使用CSS方式三（外部样式）设置图片大小 -->
+   <img src="../../resource资源文件/img/1.gif" alt="描述，当图片不存在的时候，给出的提示">
 </body>
 
 </html>

@@ -1,8 +1,14 @@
 #id1 {
     /* 高度 */
-    height: 20px;
+    height: 40px;
     /* 宽度 */
     width: 40%;
     /* 背景颜色 */
-    background-color: brown
+    background-color: brown;
+    /* 字体大小 */
+    font-size: 30px;
+}
+img{
+    width: 200px ;
+    height: 200px;
 }
