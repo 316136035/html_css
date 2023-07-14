@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 使用CSS方式二（内部样式） -->
+    <style type="text/css">
+        .class1 {
+            /* 高度 */
+            height: 20px;
+            /* 宽度 */
+            width: 30%;
+            /* 背景颜色 */
+            background-color: powderblue;
+
+        }
+    </style>
+    <!-- 使用CSS方式三（外部样式）
+    href代表引入文本.css  type代表类型 - rel代表样式--->
+    <link href="../css/A01_使用css的三种方式.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 使用CSS方式一（行内样式）-->
+    <div style="color: chartreuse;height:20px;width: 20%; background-color:royalblue"> 使用CSS方式一（行内样式）</div>
+    <!-- 使用CSS方式二（内部样式） -->
+    <div class="class1"> 使用CSS方式二（内部样式）</div>
+      <!-- 使用CSS方式三（外部样式） -->
+    <div id="id1"> 使用CSS方式三（外部样式）</div>
+</body>
+
+</html>
