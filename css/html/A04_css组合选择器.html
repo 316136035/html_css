@@ -14,23 +14,43 @@
     <!-- <link rel="stylesheet" href="#"> -->
     <!--内部样式（css选择器使用内部样式显示）-->
     <style>
-        /*交集选择器 */
-    intersection.inter{
-        color: blue;
-    }
+        /*交集选择器（什么并且什么）*/
+        intersection.inter {
+            color: blue;
+        }
 
+        /*  并集选择器（什么或者什么）*/
+        div,p{
+
+            color: brown;
+
+        }
+        /*  并集选择器（什么或者什么）*/
+        .div1,
+        .p1,
+        .div2 {
+            background-color: lightsalmon;
+
+        }
     </style>
 
 </head>
 
 <body>
     <div>
-        <!-- 交集选择器 -->
-        <intersection class="inter">交集选择器    intersection.int{color: blue;}</intersection> <br>
-        <intersection class="inter">交集选择器    intersection.int{color: blue;}</intersection>
+        <!-- 交集选择器（什么并且什么） -->
+        <intersection class="inter">交集选择器 intersection.int{color: blue;}</intersection> <br>
+        <intersection class="inter">交集选择器 intersection.int{color: blue;}</intersection>
         <hr>
+        <!-- 并集选择器（什么或者什么） -->
+        <div class="div1">并集选择器（什么或者什么）</div>
+        <p class="p1">并集选择器（什么或者什么）</p>
+        <div  class="div2">并集选择器（什么或者什么）<div>
 
-    
+
+
+
+
 
 
     </div>
