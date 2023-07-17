@@ -32,6 +32,11 @@
         div > div:active{
          color:rgb(8, 241, 4);
         }
+        /* 选择div标签中的子标签input  :focus当鼠标获取焦点时 只能用于输入框和下拉选择框*/
+        div>input:focus{
+            background-color: chartreuse;
+            width:120px;
+        }
 
 
     </style>
@@ -45,6 +50,7 @@
         <a href="https://www.tmall.com/">天猫   :visited选择访问过的url</a>
         <p> :hover鼠标悬浮时</p>
         <div class="class-active">:active当鼠标点击按下时</div>
+        <input type="text" name="username" value="当鼠标获取焦点时" >
     </div> 
 
   
