@@ -1,0 +1,56 @@
+<!DOCTYPE html> <!-- 文档声明 html-5 -->
+<html lang="zh-CN"> <!-- 设置页面语言  中文简体 -->
+<!-- 表头 -->
+
+<head><!--规定 HTML 文档的字符编码  兼用性-->
+    <meta charset="UTF-8"><!-- 针对IE浏览器的一个兼容性设置-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--< Meta Name=" description（网站内容描述）" Content="网页描述文字"   兼用性>  -->
+    <meta name="description" content="网页描述文字"><!-- Edge 模式通知 Windows Internet Explorer 以最高级别的可用模式显示内容   兼用性-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 头标题 -->
+    <title>A01_动态伪类选择器 </title><!-- 设置网站图标调用一个外部的图片文件 -->
+    <link rel="shortcut icon" href="../../../resource资源文件/img/favicon.ico" type="image/x-icon" /><!-- 调用一个外部的CSS样式文件 -->
+    <!-- 外部样式 -->
+    <!-- <link rel="stylesheet" href="#"> -->
+    <!--内部样式（css选择器使用内部样式显示）-->
+    <style>
+        /*选择 div元素中的子辈元素p 再选择子辈元素中p的第一个子辈元素 */
+        div>p:first-child {
+            background-color: chartreuse;
+        }
+   /*选择 div元素中的后代元素p 再选择后代元素中p的第一个后代元素 */
+        div p:first-child {
+            background-color: chartreuse;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <p>选择 div元素中的子辈元素p 再选择子辈元素中p的第一个子辈元素</p>
+        <p>B</p>
+        <p>C</p>
+        <p>D</p>
+    </div>
+    <hr>
+    <div>
+        <samp>谁到选不中</samp>
+        <p>谁到选不</p>
+    </div>
+    <hr>
+    <div>
+        <marquee behavior="" direction="">  <p>选择 div元素中的后代元素p 再选择后代元素中p的第一个后代元素</p></marquee>
+        <p>A</p>
+        <p>B</p>
+        <p>C</p>
+        <p>D</p>
+    </div>
+
+
+
+
+</body>
+
+</html>
