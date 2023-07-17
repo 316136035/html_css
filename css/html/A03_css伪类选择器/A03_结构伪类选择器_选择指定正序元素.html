@@ -26,10 +26,17 @@
             3*3+1=13
             
         */
-        /* 注意：ol 的子代元素不能有其他元素 （用不类型元素计算的）*/
+        /* 选择ul元素中是全部子辈元素 指定选中索引 （注意：计算的是全部子辈元素）*/
        ul > li:nth-child(2n){
             background-color:aqua;
         }
+            /* 选择ul元素中是全部子辈元素 指定选中索引 （注意：计算的是全部子辈同类型元素）*/
+        ol > li:nth-of-type(2n){
+            background-color:aqua;
+        }
+        
+
+
 
 
      
@@ -40,7 +47,8 @@
 </head>
 
 <body>
-    <ul>
+    <ul>  
+        <samp>samp</samp>
         <li>1</li>
         <li>2</li>
         <li>3</li>
