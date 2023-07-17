@@ -14,38 +14,40 @@
     <!-- <link rel="stylesheet" href="#"> -->
     <!--内部样式（css选择器使用内部样式显示）-->
     <style>
-        /*选择 div元素中的子辈元素p 再选择子辈元素中p的第一个子辈元素 */
-        div>p:first-child {
-            background-color: chartreuse;
-        }
-   /*选择 div元素中的后代元素p 再选择后代元素中p的第一个后代元素 */
-        div p:first-child {
+        /*选择 div元素中的子辈元素p 再选择子辈元素中p的最后一个子辈元素 */
+        div>p:last-child {
             background-color: chartreuse;
         }
 
+        /*选择 div元素中的全部后代元素p 再选择后代元素中p的最后一个后代元素 */
+        div p:last-child {
+            background-color: chartreuse;
+        }
     </style>
 
 </head>
 
 <body>
     <div>
-        <p>选择 div元素中的子辈元素p 再选择子辈元素中p的第一个子辈元素</p>
+        <p>A</p>
         <p>B</p>
         <p>C</p>
-        <p>D</p>
+        <p>选择 div元素中的子辈元素p 再选择子辈元素中p的最后一个子辈元素</p>
     </div>
     <hr>
     <div>
         <samp>谁到选不中</samp>
-        <p>谁到选不</p>
+        <samp>谁到选不中</samp>
     </div>
     <hr>
     <div>
-        <marquee behavior="" direction="">  <p>选择 div元素中的后代元素p 再选择后代元素中p的第一个后代元素</p></marquee>
+        <marquee behavior="" direction="">
+        <p>选择 div元素中的全部后代元素p 再选择后代元素中p的最后一个后代元素</p>
+        </marquee>
         <p>A</p>
         <p>B</p>
         <p>C</p>
-        <p>D</p>
+        <p>选择 div元素中的全部后代元素p 再选择后代元素中p的最后一个后代元素</p>
     </div>
 
 
