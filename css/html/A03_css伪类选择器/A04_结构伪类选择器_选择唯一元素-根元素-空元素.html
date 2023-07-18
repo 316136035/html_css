@@ -14,6 +14,13 @@
     <!-- <link rel="stylesheet" href="#"> -->
     <!--内部样式（css选择器使用内部样式显示）-->
     <style>
+        samp:only-child{
+            color: blueviolet;
+        }
+
+        samp:only-of-type{
+            color: blueviolet;
+        }
        
 
     </style>
@@ -21,7 +28,15 @@
 </head>
 
 <body>
-  
+    <div>
+       <samp>选择唯一元素</samp>
+    </div>
+  <div>
+    <samp>同类型选择唯一元素</samp>
+   <p>干扰行</p>
+   <p>干扰行</p>
+   <p>干扰行</p>
+  </div>
 
 
 </body>
