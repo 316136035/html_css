@@ -14,44 +14,33 @@
     <!-- <link rel="stylesheet" href="#"> -->
     <!--内部样式（css选择器使用内部样式显示）-->
     <style>
-        /* 选择samp元素是独个元素 指定选中索引 正序（注意：计算的是兄弟元素只能有独个元素）*/
-        samp:only-child {
+        /*选择ul元素中是全部li元素，但排除属性为 class="false"*/
+        ol>li:not(.false){
             color: blueviolet;
         }
+          /*选择ul元素中是全部li元素，但排除属性为  title="title"*/
+          /* ol>li:not([ title="title"]){
+            color: blueviolet;
+        } */
 
-        /* 选择samp元素是独个元素 指定选中索引 正序（注意：计算的是兄弟元素可以有多个不同类型的，只能有独个samp元素）*/
-        samp:only-of-type {
-            color: rgb(43, 226, 141);
-        }
 
-        /* 选择根元素 就是整个html */
-        :root {
-            background-color: rgb(255, 225, 0);
-        }
 
-        /* 选择空的元素 */
-        .div:empty {
-            width: 100%;
-            height: 400px;
-            background-color: crimson;
-        }
-
-</style>
+    </style>
 
 </head>
 
 <body>
-    <div>
-        <samp>选择唯一元素</samp>
-    </div>
-    <div>
-        <samp>同类型选择唯一元素</samp>
-        <p>干扰行</p>
-        <p>干扰行</p>
-        <p>干扰行</p>
-    </div>
-
-    <div class="div"></div>
+    <ol>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li title="title">7</li>
+        <li class="false">8</li>
+        <li class="false">9</li>
+    </ol>
 
 
 </body>
