@@ -14,10 +14,26 @@
     <!-- <link rel="stylesheet" href="#"> -->
     <!--内部样式（css选择器使用内部样式显示）-->
     <style>
+        /* 当选中的时候就改变UI视图 */
         input:checked {
             width: 20px;
             height: 20px;
-            background-color: crimson;
+            /* 部分样式不能修改 */
+        }
+
+        /* 当输入框可以输入的视图 */
+        input:enabled {
+            width: 200px;
+            height: 20px;
+            background-color: rgb(6, 227, 50);
+        }
+
+
+        /* 当输入框禁用输入的视图  */
+        input:disabled {
+            width: 200px;
+            height: 20px;
+            background-color: darkslategray;
         }
     </style>
 
@@ -27,6 +43,10 @@
     多选框：<input type="checkbox" value="">
     单选框<input type="radio" name="radio">
     <input type="radio" name="radio">
+    <hr>
+    <input type="" name="" id="">
+    <input type="" name="" id="" disabled>
+
 
 
 </body>
