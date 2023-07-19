@@ -14,28 +14,37 @@
     <!-- <link rel="stylesheet" href="#"> -->
     <!--内部样式（css选择器使用内部样式显示）-->
     <style>
-     
-    
+        /* 选择div中带有语言zh-CN的元素 */
+        div:lang(zh-CN) {
+            color: brown;
 
+        }
+
+         /* 选择有语言UTF-8的元素*/
+        :lang(UTF-8) {
+            color: rgb(42, 165, 101);
+           
+        }
     </style>
 
 </head>
 
-<body>   
-   
-    <a href="#div1">div1</a>
-    <a href="#div2">div2</a>
-    <a href="#div3">div3</a>
-    <a href="#div4">div4</a>
-    <a href="#div5">div5</a>
+<body>
 
 
 
-    <div id="div1">div1</div> <hr>
-    <div id="div2">div2</div> <hr>
-    <div id="div3">div3</div> <hr>
-    <div id="div4">div4</div> <hr>
-    <div id="div5">div5</div> <hr>
+    <div>
+        <div lang="zh-CN">中文(简体，中国大陆)</div>
+        <div lang="en-US">英国(美国)</div>
+
+    </div>
+
+
+
+    <div lang="UTF-8">UTF-8</div>
+    <div lang="UTF-8">UTF-8</div>
+    <div lang="UTF-8">UTF-8</div>
+
 
 
 
