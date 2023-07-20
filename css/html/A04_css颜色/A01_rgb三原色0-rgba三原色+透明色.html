@@ -14,26 +14,42 @@
     <!-- <link rel="stylesheet" href="#"> -->
     <!--内部样式（css选择器使用内部样式显示）-->
     <style>
-        .div1{
+        .div1 {
             height: 100px;
             width: 100px;
             background-color: rgb(24, 52, 32);
         }
-        
+
         /* 注意：要么全部写0-255  要么全部百分百 （红、绿、蓝 ） */
-        .div2{
+        .div2 {
             height: 100px;
             width: 100px;
             background-color: rgb(100%, 10%, 20%);
         }
+
         /* 注意：要么全部写0-255  要么全部百分百 （红、绿、蓝、透明度 ）*/
-        .div3{
+        .div3 {
             height: 100px;
             width: 100px;
-            background-color: rgba(100%, 20%, 32%,0.5);
+            background-color: rgba(100%, 20%, 32%, 0.5);
             color: rgb(0%, 10%, 20%);
         }
-     
+
+        /* 16进制写法（#红、绿、蓝）  1~9~a~f 小到大  最小值00 最小值FF  每一位数字的取值范围是: 8 ~ f，即: (8，1，2，3，4，5，6，7，8，9，a，b，c，d，e，f)*/
+        .div4 {
+            height: 100px;
+            width: 100px;
+            background-color: #f0A9B6;
+
+        }
+
+        /* 16进制写法（#红、绿、蓝、透明度）  1~9~a~f 小到大  最小值00 最小值FF   每一位数字的取值范围是: 8 ~ f，即: (8，1，2，3，4，5，6，7，8，9，a，b，c，d，e，f) */
+        .div5 {
+            height: 100px;
+            width: 100px;
+            background-color: #f0A9B6aa;
+
+        }
     </style>
 
 </head>
@@ -43,8 +59,10 @@
 
 
     <div class="div1">1</div>
-    <div class="div2">2</div> 
+    <div class="div2">2</div>
     <div class="div3">3</div>
+    <div class="div4">4</div>
+    <div class="div5">5</div>
 
 
 
