@@ -17,7 +17,7 @@
         .div1 {
             height: 100px;
             width: 100px;
-            background-color: rgb(24, 52, 32);
+            background-color: rgb(11, 244, 77);
         }
 
         /* 注意：要么全部写0-255  要么全部百分百 （红、绿、蓝 ） */
