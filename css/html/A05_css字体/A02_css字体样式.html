@@ -1,0 +1,99 @@
+<!DOCTYPE html> <!-- 文档声明 html-5 -->
+<html lang="zh-CN"> <!-- 设置页面语言  中文简体 -->
+<!-- 表头 -->
+
+<head><!--规定 HTML 文档的字符编码  兼用性-->
+    <meta charset="UTF-8"><!-- 针对IE浏览器的一个兼容性设置-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--< Meta Name=" description（网站内容描述）" Content="网页描述文字"   兼用性>  -->
+    <meta name="description" content="网页描述文字"><!-- Edge 模式通知 Windows Internet Explorer 以最高级别的可用模式显示内容   兼用性-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 头标题 -->
+    <title>A01_html标准结构</title>
+    <!-- 设置网站图标调用一个外部的图片文件 -->
+    <link rel="shortcut icon" href="../../resource资源文件/img/favicon.ico" type="image/x-icon" />
+    <!-- 调用一个外部的CSS样式文件 -->
+    <link rel="stylesheet" href="#">
+    <!--内部样式（css选择器使用内部样式显示）-->
+    <style>
+        /*设置字体楷体，雅黑体,宋体  依次匹配当前面用过电脑没有这种字体就匹配下一个字体*/
+        .taoshenjai1{
+         font-family: 'KaiTi', 'YaHei','STSong';
+        }
+         /*设置字体楷体，雅黑体,宋体  依次匹配当前面用过电脑没有这种字体就匹配下一个字体 
+         字体分类 一般用于收尾
+         衬线字体：serif 
+         非衬线字体： sans-serif 
+         */
+        .taoshenjai2{
+            font-family: 'KaiTi', 'YaHei','sans-serif ';
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <table border="1" cellpadding="0" cellspacing="0" >
+        <tr>
+            <td><h3 style="font-family: 黑体;">黑体：SimHei</h3></td>
+            <td><h3 style="font-family: 华文黑体;">华文黑体：STHeiti</h3></td>
+            <td><h3 style="font-family: 微软正黑体;">微软正黑体： JhengHei</h3></td>
+            <td><h3 style="font-family: 微软雅黑体;">微软雅黑体：Microsoft YaHei</h3></td>
+            <td><h3 style="font-family: 华文细黑;">华文细黑：STXihei</h3></td>
+        </tr>
+        <tr>
+            <td><h3 style="font-family: 楷体;">楷体：KaiTi</h3></td>
+            <td><h3 style="font-family: 楷体_GB2312;">楷体_GB2312：KaiTi_GB2312</h3></td>
+            <td><h3 style="font-family: 华文楷体;">华文楷体：STKaiti</h3></td>
+            <td><h3 style="font-family: 华文行楷;">华文行楷：STXingkai</h3></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><h3 style="font-family: 宋体;">宋体：SimSun</h3></td>
+            <td><h3 style="font-family: 新宋体;">新宋体：NSimSun</h3></td>
+            <td><h3 style="font-family: 仿宋;">仿宋：FangSong</h3></td>
+            <td><h3 style="font-family: 仿宋_GB2312;">仿宋_GB2312：FangSong_GB2312</h3></td>
+            <td><h3 style="font-family: 华文宋体;">华文宋体：STSong</h3></td>
+        </tr>
+        <tr>
+            <td><h3 style="font-family: 华文中宋;">华文中宋：STZhongsong</h3></td>
+            <td><h3 style="font-family: 华文仿宋;">华文仿宋：STFangsong</h3></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><h3 style="font-family: 华文新魏;">华文新魏：STXinwei</h3></td>
+            <td><h3 style="font-family: 华文琥珀;">华文琥珀：STHupo</h3></td>
+            <td><h3 style="font-family: 隶书;">隶书：LiSu</h3></td>
+            <td><h3 style="font-family: 华文隶书;">华文隶书：STLiti</h3></td>
+            <td><h3 style="font-family: 华文彩云;">华文彩云：STCaiyun</h3></td>
+        </tr>
+        <tr>
+            <td><h3 style="font-family: 方正舒体;">方正舒体：FZShuTi</h3></td>
+            <td><h3 style="font-family: 方正姚体;">方正姚体：FZYaoti</h3></td>
+            <td><h3 style="font-family: 幼圆;">幼圆：YouYuan</h3></td>
+            <td><h3 style="family:\5B8B\4F53;">PingFangSC-Medium</h3></td>
+            <td></td>
+        </tr>
+    </table>
+    
+    <div class="div">
+        <div class="taoshenjai1">淘神价1</div>
+        <div class="taoshenjai2">淘神价2</div>
+        <div class="taoshenjai3">淘神价3</div>
+        <div class="taoshenjai4">淘神价4</div>
+        <div class="taoshenjai5">淘神价5</div>
+        <div>继承下来的样式</div>
+    </div>
+
+
+
+
+
+    <script type="text/javascript" src="#">    /*javascript代码  */</script>
+
+</body>
+
+</html>
