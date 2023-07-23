@@ -29,26 +29,31 @@
             font-size: 20px;
             /* 背景颜色 */
             background-color: rgb(42, 165, 83);
-           /* 设置文本行高像素值 */
+            /* 设置文本行高像素值 */
             line-height: 40px;
         }
 
-        .div3{
+        .div3 {
             /* 设置字体像素值 */
             font-size: 20px;
             /* 背景颜色 */
             background-color: rgb(14, 8, 205);
-              /* 设置文本行高数字 行高等于字体大小px*2  第三种写法*/
+            /* 设置文本行高数字 行高等于字体大小px*2  第三种写法*/
             line-height: 2.5;
         }
-        
-        .div4{
+
+        .div4 {
             /* 设置字体像素值 */
             font-size: 20px;
             /* 背景颜色 */
             background-color: rgb(222, 214, 6);
-              /* 设置文本行高数字 行高等于字体大小的百分比  第四种写法*/
+            /* 设置文本行高数字 行高等于字体大小的百分比  第四种写法*/
             line-height: 400%;
+        }
+
+        .head {
+            color: crimson;
+            font-size: 40px;
         }
     </style>
 </head>
@@ -59,6 +64,23 @@
     <div class="div2">联想ThinkBook 16p 英特尔酷睿i9 16英寸高性能轻薄创作本 i9-13900H 32G 1T RTX4060 3.2K 165Hz</div>
     <div class="div3">联想ThinkBook 16p 英特尔酷睿i9 16英寸高性能轻薄创作本 i9-13900H 32G 1T RTX4060 3.2K 165Hz</div>
     <div class="div4">联想ThinkBook 16p 英特尔酷睿i9 16英寸高性能轻薄创作本 i9-13900H 32G 1T RTX4060 3.2K 165Hz</div>
+
+    <div>
+        <div class="head">行高注意事项</div>
+        <div>1. line-height 过小会怎样? -- 文字产生重叠，且最小值是，不能为负数。 </div>
+        <div>2.line-height 是可以继承的，且为了能更好的呈现文字，最好写数值</div>
+        <div>3.line-height和 height 是什么关系? #设置了 height ，那么高度就是 height 的值 #不设置 height 的时候，会根据 ine-height 计算高度</div>
+        <div class="head">应用场景:</div>
+        <div>1.对于多行文字: 控制行与行之间的距离。 </div>
+        <div></div>2.对于单行文字: 让 height 等于 line-height，可以实现文字垂直居中。备注:由于字体设计原因，靠上述办法实现的居中，并不是绝对的垂直居中>
+    </div>
+
+
+    </div>
+
+
+    </div>
+
 
 
 
