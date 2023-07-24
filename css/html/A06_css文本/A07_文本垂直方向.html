@@ -51,6 +51,18 @@
             vertical-align: middle;
 
         }
+
+        /* 获取tbodytr元素下的全部子元素td */
+        .tbodytr td {
+            /* 设置高度 */
+            height: 50px;
+        }
+
+        /*  获取tbodytr元素*/
+        .tbodytr {
+            /* tr继承tr的垂直方向*/
+            vertical-align: top;
+        }
     </style>
 </head>
 
@@ -58,6 +70,36 @@
 
     <div class="div1">联想ThinkBook英特尔酷睿i9x<span>x前端</span></div>
     <div class="div2">联想ThinkBook英特尔酷睿i9x<img src="../../../resource资源文件/img/favicon.ico"></div>
+    <div>
+        <table border="1" cellspacing="0">
+            <caption>人员信息</caption>
+            <thead>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>性别</th>
+            </thead>
+            <tbody>
+                <tr class="tbodytr">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
 
 
 
