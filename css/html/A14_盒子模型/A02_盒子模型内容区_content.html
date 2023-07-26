@@ -11,44 +11,31 @@
     <!-- Edge 模式通知 Windows Internet Explorer 以最高级别的可用模式显示内容   兼用性-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 头标题 -->
-    <title>A01_盒子模型组成部分</title>
+    <title>A02_盒子模型内容区content</title>
     <!-- 设置网站图标调用一个外部的图片文件 -->
     <link rel="shortcut icon" href="../../resource资源文件/img/favicon.ico" type="image/x-icon" />
     <!-- 调用一个外部的CSS样式文件 -->
     <link rel="stylesheet" href="#">
     <!--内部样式（css选择器使用内部样式显示）-->
     <style>
-        .div{
-            /*设置内容区宽度 */
-            width: 400px; 
-             /*设置内容区高度 */
-            height: 400px;
-            /* 设置字体大小 */
-            font-size: 10px;
-            /* 设置背景颜色 */
-            background-color: red;
-            /* 设置内边距  会覆盖背景部分 */
-            padding: 10px;
-            /* 设置边框样式（像素值，线型，边框颜色 ）  */
-            border: 10px solid green;
-            /* 设置外边距 */
-            margin:20px;
+        .div1 {
+            background-color: aqua;
+            /*设置内容区最小宽度 */
+            min-width: 20px;
+            /*设置内容区最大宽度 */
+            max-width: 1200px;
+            /*设置内容区最小高度 */
+            min-height: 20px;
+            /*设置内容区最大高度 */
+            max-height: 1200px;
 
         }
-
     </style>
 
 </head>
 
 <body>
-   
-        <div class="div">
-            content内容区
-        </div>
-        <div>
-            <img src="../../../resource资源文件/img/盒子模型.png" alt="">
-        </div>
-
+    <div class="div1">A02_盒子模型内容区content(当不设置内容区宽度和高度 浏览器会自动识别调整宽度和高度的视图) 可以手动设置最大宽度和最小宽度/最大高度和最小高度</div>
 
 
 
