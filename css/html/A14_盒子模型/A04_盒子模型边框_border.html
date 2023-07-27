@@ -23,12 +23,12 @@
             border-width: 20px;
             /* 设置边框样式 实线 */
             border-style: solid;
+            /* 设置边框样式 实线 */
             /* 设置边框颜色 */
             border-color: chartreuse;
+            /* 设置边框颜色 */
             /* 组合写法 */
             border: 10px solid red;
-
-
         }
 
         .div2 {
@@ -47,10 +47,10 @@
             border-bottom-color: rgb(111, 0, 255);
 
             /* 设置左边框厚度 */
-            border-left-width:30px;
+            border-left-width: 30px;
             /* 设置左边框样式 */
             border-left-style: double;
-             /* 设置左边框颜色 */
+            /* 设置左边框颜色 */
             border-left-color: rgb(255, 115, 0);
 
             /* 设置右边框厚度 */
@@ -59,14 +59,23 @@
             border-right-style: groove;
             /* 设置右边框颜色 */
             border-right-color: rgb(255, 0, 0);
+        }
 
-
+        .div3 {
+            /* 设置上边框 组合写法（ 厚度 样式 颜色）*/
+            border-top: 10px dashed rgb(255, 149, 0);
+            /* 设置下边框 组合写法（ 厚度 样式 颜色）*/
+            border-bottom: 20px double rgb(0, 255, 136);
+            /* 设置左边框 组合写法（ 厚度 样式 颜色）*/
+            border-left: 30px groove rgb(25, 0, 255);
+            /* 设置右边框 组合写法（ 厚度 样式 颜色）*/
+            border-right: 40px solid rgb(255, 0, 38);
 
         }
 
         div {
-            width: 400px;
-            height: 400px;
+            width: 200px;
+            height: 200px;
         }
     </style>
 
@@ -75,8 +84,9 @@
 <body>
     <div class="div1">设置边框普通写法和组合写法</div>
     <hr>
-
     <div class="div2">设置边框定位写法</div>
+    <hr>
+    <div class="div3">设置边框定位组合写法</div>
 
 
 
