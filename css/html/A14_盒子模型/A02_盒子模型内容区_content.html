@@ -21,13 +21,13 @@
         .div1 {
             background-color: aqua;
             /*设置内容区最小宽度 */
-            min-width: 20px;
+            /* min-width: 20px; */
             /*设置内容区最大宽度 */
-            max-width: 1200px;
+            /* max-width: 1200px; */
             /*设置内容区最小高度 */
-            min-height: 20px;
+            /* min-height: 20px; */
             /*设置内容区最大高度 */
-            max-height: 1200px;
+            /* max-height: 1200px; */
 
         }
     </style>
@@ -36,7 +36,12 @@
 
 <body>
     <div class="div1">A02_盒子模型内容区content(当不设置内容区宽度和高度 浏览器会自动识别调整宽度和高度的视图) 可以手动设置最大宽度和最小宽度/最大高度和最小高度</div>
-    <div>盒子模型内容区content默认高度和宽度</div>
+    <div>盒子模型内容区content默认高度和宽度为视图高度和宽度</div>
+    <div> 当盒子模型内容区不设置宽度和高度  margin（外边距）  padding（内边距） border（边框） 会印象模型内容区的宽度和高度</div>
+    <div> 盒子模型内容区content=视图- margin（外边距）*2padding（内边距）*2-border（边框）*2</div>
+
+
+
 
 
     <script type="text/javascript" src="#">    /*javascript代码  */</script>
