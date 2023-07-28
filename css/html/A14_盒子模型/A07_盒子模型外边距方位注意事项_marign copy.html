@@ -21,69 +21,140 @@
         .vertical>div {
             /* 行内块元素方式显示 */
             display: inline-block;
-            width: 200px;
-            height: 200px;
+            /* 设置宽度 */
+            width: 100px;
+            /* 设置高度 */
+            height: 100px;
         }
 
         .level>div {
             /* 块级元素方式显示 （默认的）*/
             display: block;
-            width: 200px;
-            height: 200px;
+            /* 设置宽度 */
+            width: 100px;
+            /* 设置高度 */
+            height: 100px;
         }
 
         .div1 {
+            /* 设置背景颜色 */
             background-color: rgb(255, 0, 0);
         }
 
+        /* 行内块元素方式显示 */
         /* 水平方向 */
         .div2 {
             background-color: rgb(47, 255, 0);
-            /* 设置左外边框会影响右边的全部div后移动 （包括自身）*/
+            /* 设置左外边距会影响右边的全部div后移动 （包括自身）*/
             margin-left: 20px;
-            /* 设置左外边框会影响右边的全部div后移动（不包括自身） */
+            /* 设置右外边距会影响右边的全部div后移动（不包括自身） */
             margin-right: 40px;
-            /* 设置上外边框会影响整行*/
-            margin-top: 50px;
-            /* 设置上外边框会影响整行*/
-            margin-bottom: 50px;
+            /* 设置上外边距会影响整行*/
+            margin-top: 1px;
+            /* 设置上外边距会影响整行*/
+            margin-bottom: 1px;
         }
 
         .div3 {
+            /* 设置背景颜色 */
             background-color: rgb(255, 208, 0);
         }
 
-     
+
         .div4 {
+            /* 设置背景颜色 */
             background-color: rgb(0, 13, 255);
         }
-           /* 垂直方向 */
+
+        /* 块级元素方式显示 （默认的）  */
+        /* 垂直方向 */
         .div5 {
+            /* 设置背景颜色 */
             background-color: rgb(119, 0, 255);
+            /* 设置左外边距*/
+            margin-left: 20px;
+            /* 设置右外边距 */
+            margin-right: 20px;
+            /* 设置上外边距会影响全部div后移动（包括自身）*/
             margin-top: 10px;
+            /* 设置上外边距会影响全部div后移动（不包括自身）*/
+            margin-bottom: 20px;
         }
 
         .div6 {
             background-color: rgb(255, 0, 238);
+        }
+
+        /* 行内元素*/
+        .inline1 {
+            /* 设置背景颜色 */
+            background-color: rgb(48, 228, 12);
+
+        }
+
+        /* 行内元素*/
+        .inline2 {
+            /* 设置左外边距  上下边距不会有效果*/
+            margin-left: 200px;
+            /* 设置右外边距  上下边距不会有效果*/
+            margin-right: 200px;
+            /* 设置背景颜色 */
+            background-color: rgb(9, 184, 223);
+
+        }
+
+        .inline3 {
+            /* 设置背景颜色 */
+            background-color: rgb(223, 9, 45);
+        }
+
+        /* 块级元素设置外边距为自动auto */
+        .auto {
+            width: 750px;
+            height: 20px;
+            /* 设置背景颜色 */
+            background-color: rgb(223, 9, 45);
+            /* 设置外边距左为自动（ 块级元素会跑到最右边，当外边距左右也设置为自动， 元素会在水平中间显示） */
+            margin-left: auto;
+            /* 设置外边距右为自动（ 块级元素会跑到最左边） 当外边距左右也设置为自动， 元素会在水平中间显示*/
+            margin-right: auto;
         }
     </style>
 
 </head>
 
 <body>
+    <!-- 行内块元素方式显示 -->
     <div class="vertical">
-        <div class="div1">div1</div>
-        <div class="div2">div2</div>
-        <div class="div3">div3</div>
+        <div class="div1">行内块元素方式显示div1</div>
+        <div class="div2">行内块元素方式显示div2</div>
+        <div class="div3">行内块元素方式显示div3</div>
 
     </div>
     <hr>
+    <!-- 块级元素方式显示 （默认的） -->
     <div class="level">
-        <div class="div4">div4</div>
-        <div class="div5">div5</div>
-        <div class="div6">div6</div>
+        <div class="div4">块级元素方式显示 div4</div>
+        <div class="div5">块级元素方式显示 div5</div>
+        <div class="div6">块级元素方式显示 div6</div>
 
     </div>
+    <hr>
+    <div class="inline">
+        <!-- 行内元素 -->
+        <span class="inline1">行内元素inline1</span>
+        <span class="inline2">行内元素inline2</span>
+        <span class="inline3">行内元素inline3</span>
+
+    </div>
+    <hr>
+    <!-- 块级元素 -->
+    <div class="auto">
+        设置外边距左为自动（ 块级元素会跑到最右边，当外边距左右也设置为自动， 元素会在水平中间显示）
+    </div>
+
+
+
 
     <script type="text/javascript" src="#">  /*javascript代码  */</script>
 
