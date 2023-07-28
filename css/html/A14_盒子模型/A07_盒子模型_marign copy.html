@@ -18,15 +18,54 @@
     <link rel="stylesheet" href="#">
     <!--内部样式（css选择器使用内部样式显示）-->
     <style>
+        .vertical>div {
+            /* 行内块元素方式显示 */
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+        }
 
-      .vertical>div{
-         /* 行内块元素方式显示 */
-         display: inline-block;
-      }
+        .level>div {
+            /* 块级元素方式显示 （默认的）*/
+            display: block;
+            width: 200px;
+            height: 200px;
+        }
 
-      .level{}
-        /* 块级元素方式显示 */
+        .div1 {
+            background-color: rgb(255, 0, 0);
+        }
 
+        /* 水平方向 */
+        .div2 {
+            background-color: rgb(47, 255, 0);
+            /* 设置左外边框会影响右边的全部div后移动 （包括自身）*/
+            margin-left: 20px;
+            /* 设置左外边框会影响右边的全部div后移动（不包括自身） */
+            margin-right: 40px;
+            /* 设置上外边框会影响整行*/
+            margin-top: 50px;
+            /* 设置上外边框会影响整行*/
+            margin-bottom: 50px;
+        }
+
+        .div3 {
+            background-color: rgb(255, 208, 0);
+        }
+
+     
+        .div4 {
+            background-color: rgb(0, 13, 255);
+        }
+           /* 垂直方向 */
+        .div5 {
+            background-color: rgb(119, 0, 255);
+            margin-top: 10px;
+        }
+
+        .div6 {
+            background-color: rgb(255, 0, 238);
+        }
     </style>
 
 </head>
@@ -38,6 +77,7 @@
         <div class="div3">div3</div>
 
     </div>
+    <hr>
     <div class="level">
         <div class="div4">div4</div>
         <div class="div5">div5</div>
