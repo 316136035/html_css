@@ -18,42 +18,34 @@
     <link rel="stylesheet" href="#">
     <!--内部样式（css选择器使用内部样式显示）-->
     <style>
-        .parent-element {
-            /* 设置父元素内容区_content宽度 */
-            width: 400px;
-            /* 设置父元素内容区_content高度 */
-            height: 400px;
-            /* 设置父元素外边距 */
-            padding: 50px;
-            /* 设置父元素背景颜色 */
-            background-color: bisque;
-        }
 
-        .child-element {
-            /* 设置子元素内容区_content宽度 */
-            width: 100px;
-            /* 设置子元素内容区_content宽度 */
-            height: 100px;
-            /* 设置子元素外边距 （子元素相对的是父元素的外边距）*/
-            padding: 100px;
-            /* 设置子元素背景颜色 */
-            background-color: rgb(196, 255, 228);
+      .vertical>div{
+         /* 行内块元素方式显示 */
+         display: inline-block;
+      }
 
-        }
+      .level{}
+        /* 块级元素方式显示 */
+
     </style>
 
 </head>
 
 <body>
-    <div class="parent-element">
+    <div class="vertical">
+        <div class="div1">div1</div>
+        <div class="div2">div2</div>
+        <div class="div3">div3</div>
 
-        <div class="child-element">我是子元素</div>
-        我是父元素
     </div>
-    <img src="../../../resource资源文件/img/A06_盒子模型父子关系的外边距_marign.png" alt="">
+    <div class="level">
+        <div class="div4">div4</div>
+        <div class="div5">div5</div>
+        <div class="div6">div6</div>
 
+    </div>
 
-    <script type="text/javascript" src="#"> /*javascript代码  */</script>
+    <script type="text/javascript" src="#">  /*javascript代码  */</script>
 
 </body>
 
