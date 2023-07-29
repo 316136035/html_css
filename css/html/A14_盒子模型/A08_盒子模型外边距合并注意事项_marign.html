@@ -18,14 +18,57 @@
     <link rel="stylesheet" href="#">
     <!--内部样式（css选择器使用内部样式显示）-->
     <style>
-     
+        .A {
+            width: 200px;
+            height: 200px;
+            background-color: chartreuse;
+            /*相邻的外边距设置下方和上面（其中的一个会不生效，取最大值，只会存在bottom-->top）-->  */
+            margin-bottom: 50px;
+        }
+
+        .B {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(255, 0, 38);
+            /*相邻的外边距设置下方和上面（其中的一个会不生效，取最大值,只会存在bottom-->top）-->  */
+            margin-top: 50px;
+        }
+       
+        .inline>div{
+            width: 100px;
+            height: 100px;
+          /* 设置为行内块元素显示模式.水平方位排序 */
+            display:inline-block;
+        }
+        .C{
+            /* 相邻的外边距设置右会和左的合并显示 */
+            background-color: rgb(255, 238, 0);
+            margin-right: 50px;
+        }
+        .D{
+            background-color: rgb(111, 0, 255);
+              /* 相邻的外边距设置左会和右的合并显示 */
+            margin-left: 50px;
+        }
     </style>
 
 </head>
 
 <body>
-  
- <script type="text/javascript" src="#">  /*javascript代码  */</script>
+
+    <div>
+        <div class="A">A</div>
+        <div class="B">B</div>
+
+    </div>
+    <hr>
+    <div class="inline">
+        <div class="C">C</div>
+        <div class="D">D</div>
+
+    </div>
+
+    <script type="text/javascript" src="#">  /*javascript代码  */</script>
 
 </body>
 
