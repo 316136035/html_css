@@ -12,25 +12,25 @@
     <link rel="shortcut icon" href="../../resource资源文件/img/favicon.ico" type="image/x-icon" /><!-- 调用一个外部的CSS样式文件 -->
     <link rel="stylesheet" href="#">
     <style>
-        .div1{
+        .div1 {
             height: 400px;
             background-color: blanchedalmond;
             font-size: 30px;
             color: crimson;
             font-weight: bold;
         }
-        .div2{
-            height:300px;
+
+        .div2 {
+            height: 300px;
             background-color: blue;
             margin: 50px;
         }
-        .div3{
-            height:200px;
+
+        .div3 {
+            height: 200px;
             background-color: rgb(0, 255, 153);
             margin: 50px;
         }
-
-
     </style>
 </head>
 
@@ -42,19 +42,19 @@
 
 
     </div>
-    <h1>样式继承讲解</h1>
+
     <div>
-            会继承css的属性
-          <!-- ol有序列表 属性         type="1/A/a/I/i"  规定在列表中使用的标记类型         start='0'规定有序列表的起始值         reversed="reversed" 列表顺序为降序-->
-          <ol type="1" start='1' > <!-- 列表的项 -->
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li><a href="https:b.jd.com/">京东</a></li>
-            <ol>
+        <h1> 会继承css的属性</h1>
+        文本属性(除了vertical-align) 、文字颜色 等。
+
     </div>
-   
+
+    <div>
+        <h1> 不会继承css的属性</h1>
+        边框、背景、内边距、外边距、宽高、溢出方式 等。
+    </div>
+    <h3>规律:能继承的属性，都是不影响布局的，简单说: 都是和盒子模型没关系的。</h3>
+
 
     <script type="text/javascript" src="#">    /*javascript代码  */</script>
 
