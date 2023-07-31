@@ -8,7 +8,7 @@
     <!--< Meta Name=" description（网站内容描述）" Content="网页描述文字"   兼用性>  -->
     <meta name="description" content="网页描述文字"><!-- Edge 模式通知 Windows Internet Explorer 以最高级别的可用模式显示内容   兼用性-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 头标题 -->
-    <title>A01_块级元素居中</title><!-- 设置网站图标调用一个外部的图片文件 -->
+    <title>A02_行内元素居中</title><!-- 设置网站图标调用一个外部的图片文件 -->
     <link rel="shortcut icon" href="../../resource资源文件/img/favicon.ico" type="image/x-icon" /><!-- 调用一个外部的CSS样式文件 -->
     <link rel="stylesheet" href="#">
     <style>
@@ -16,30 +16,22 @@
             width: 400px;
             height: 400px;
             background-color: chartreuse;
-            /* 溢出： 不设置的话子元素外边距不生效 */
-            overflow: hidden;
-        }
-
-        .div2 {
-            /*设置宽度度 */
-            width: 200px;
-            /*设置高度 */
-            height: 200px;
-            /* 设置背景颜色 */
-            background-color: rgb(255, 0, 72);
-            /* 设置内边距 */
-            padding: 10px;
-            /* 设置边框 */
-            border: 20px solid green;
-            /* 设置水平居中 */
-            margin: 0 auto;
-            /* 设置外边距为100px（实现垂直居中，垂直居中=父元素高度-（子元素高度+（内边距+边框）*2）） */
-            margin-top: 70px;
-            /* 文字水平居中 */
+            /* 设置行内元素水平居中 */
             text-align: center;
-            /* 使用行距实现文字垂直居中 */
-            line-height: 200px;
-   }
+            background-color: chartreuse;
+            /* 设置行内元素垂直居中 */
+            line-height: 400px;
+          
+         
+        }
+        .span1{
+            /* 设置字体的参数，改变方位请在父元素中设置 */
+            background-color: darkviolet;
+            font-size: 30px;
+          }
+      
+
+        
     </style>
 </head>
 
@@ -48,7 +40,7 @@
 
     <div class="div1">
 
-        <div class="div2">你好啊？</div>
+        <span class="span1">你好啊？</div>
 
     </div>
 
