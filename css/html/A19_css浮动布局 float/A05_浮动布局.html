@@ -146,8 +146,8 @@
             width: 200px;
             /* 设置高度 */
             height: 130px;
-            /* 设置外边框 */
-            margin: 5px;
+            /* 设置上外边框 */
+            margin-top:5px;
             /* 设置背景颜色 */
             background-color: darkgreen;
             /* 设置行距  实现文字垂直居中*/
@@ -160,7 +160,7 @@
     <!--父容器-->
     <div class="container">
         <!-- 头部  page-header 清除浮动影响clear-both-->
-        <div class="clear-both page-header">
+        <div class="page-header clear-both">
             <div class="float-left loge">公司标志</div>
             <div class="float-left banner1">主页</div>
             <div class="float-left banner2"> banner2</div>
@@ -168,18 +168,18 @@
         <!-- 菜单 menu -->
         <div class="menu">菜单</div>
         <!-- 内容区  contrne  清除浮动影响clear-both-->
-        <div class="clear-both contrne">
-            <!-- 左侧left"-->
+        <div class="contrne clear-both ">
+            <!-- 左侧left  左浮动float-left-->
             <div class="float-left left">
                 <!-- 左侧上方left-top 清除浮动影响clear-both-->
-                <div class="clear-both left-top">
-                    <!-- 左浮动 -->
+                <div class="left-top clear-both">
+                    <!-- 左浮动float-left -->
                     <div class="intem1 float-left">栏目1</div>
                     <div class="intem2 float-left">栏目2</div>
                 </div>
                 <!-- 左侧下方left-bottom 清除浮动影响clear-both-->
-                <div class="clear-both  left-bottom ">
-                    <!-- 左浮动 -->
+                <div class="left-bottom clear-both">
+                    <!-- 左浮动float-left -->
                     <div class="intem3 float-left">栏目3</div>
                     <div class="intem4 float-left">栏目4</div>
                     <div class="intem5 float-left">栏目5</div>
@@ -187,7 +187,7 @@
                 </div>
 
             </div>
-            <!-- 右侧right -->
+            <!-- 右侧right 右浮动float- right-->
             <div class="float-right right">
                 <div class="intem7">栏目7</div>
                 <div class="intem8">栏目8</div>
@@ -195,6 +195,7 @@
             </div>
 
         </div>
+        <!-- 底部 -->
         <div class="bottom">底部</div>
 
     </div>
