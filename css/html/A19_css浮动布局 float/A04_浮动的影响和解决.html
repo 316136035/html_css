@@ -16,10 +16,11 @@
             width: 500px;
             background-color: aquamarine;
             border: 1px solid black;
+            /* 解决父元素高度塌陷问题：不能处理对后面兄弟的影响 */
             /* height: 200px; */
             /* float: left; */
             /* overflow:scroll; */
-      
+
 
         }
 
@@ -38,7 +39,9 @@
             /*使用左浮动 */
             float: left;
         }
-        .E{
+
+        /* 解决父元素高度塌陷问题：不能处理对后面兄弟的影响 */
+        .E {
             /* 设置高度，支撑着父元素的高度 */
             height: 120px;
             /* 把块元素改成行内块元素 */
@@ -52,6 +55,55 @@
             /*使用左浮动 */
             float: left;
         }
+
+        /* 解决父元素高度塌陷问题并消除前后浮动的影响 方案一 */
+        .E1 {
+            /* 消除前后浮动的影响（选择的元素必须是最后一个和非浮动的元素并是行内元素/行内块元素） */
+            clear: both;
+            /* 设置为行内块元素 */
+            display: inline-block;
+        }
+
+        .B2,
+        .C2,
+        .D2 {
+
+            /*使用左浮动 */
+            float: left;
+        }
+
+        /* 解决父元素高度塌陷问题并消除前后浮动的影响 方案二：在兄弟元素后面添加一个空元素然后  */
+        .empty-element {
+            /* 消除前后浮动的影响（选择的元素必须是最后一个和非浮动的元素并是行内元素/行内块元素） */
+            clear: both;
+        }
+
+        .divsan {
+            width: 500px;
+            background-color: rgb(150, 255, 127);
+            border: 1px solid black;
+        }
+
+        .divsan div {
+
+            /*使用左浮动 */
+            float: left;
+        }
+
+
+        /* 解决父元素高度塌陷问题并消除前后浮动的影响 方案三  */
+        /* 选择子元素最后一次元素 */
+        .divsan::after {
+            /*添加内容 */
+            content: '空白处';
+            /* 设置为块元素 */
+            display: block;
+            /* 消除前后浮动的影响（选择的元素必须是最后一个和非浮动的元素并是行内元素/行内块元素） */
+            clear: both;
+
+        }
+
+
     </style>
 </head>
 
@@ -62,13 +114,13 @@
         <div> 对父元素的影响: 不能撑起父元素的高度，导致父元素高度塌陷，但父元素的宽度依然束缚浮动的元素. </div>
     </div>
     <div>
-        <div style="color: red;"> 解决父元素高度塌陷问题：
-           解决父元素高度塌陷问题 
+        <div style="color: red;">
+            解决父元素高度塌陷问题：不能处理对后面兄弟的影响
             .E{display: inline-block;}
             父元素中设置 高度 浮动 溢出
-            height: 200px; 
+            height: 200px;
             float: left;
-           overflow:scroll;
+            overflow:scroll;
 
         </div>
         <div class="div">
@@ -76,7 +128,8 @@
             <div class="box B">B</div>
             <div class="box C">C</div>
             <div class="box D">D</div>
-            <div class="box E">E</div>
+            <div class="box E"></div>
+
         </div>
         <div style="background-color: rgb(42, 165, 126);">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam fuga quae animi corporis, cum quibusdam
@@ -96,7 +149,100 @@
         </div>
     </div>
 
-    
+
+    <div>
+        <div style="color: red;">
+            解决父元素高度塌陷问题并消除前后浮动的影响 方案一
+            .E1{clear: both;isplay: inline-block;}
+        </div>
+        <div class="div">
+            <div class="box A1">A1</div>
+            <div class="box B1">B1</div>
+            <div class="box C1">C1</div>
+            <div class="box D1">D1</div>
+            <div class="box E1">E1</div>
+        </div>
+        <div style="background-color: rgb(42, 165, 126);">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam fuga quae animi corporis, cum quibusdam
+            saepe doloribus accusantium inventore dolor deleniti ab vitae delectus? Facere earum, sint quasi nesciunt
+            quae
+            mollitia molestias officia. Eaque id dolorum labore libero. Necessitatibus repellendus nisi ea suscipit
+            quidem
+            reiciendis quod nostrum magnam, impedit nemo? Cumque libero pariatur tenetur, molestiae deleniti possimus
+            nesciunt qui quod molestias fugiat odio eius rerum sequi maxime exercitationem esse iste laudantium vero
+            dolor
+            eveniet et placeat! Explicabo fugiat animi officiis vero similique ad, placeat amet, harum non omnis rem
+            sunt
+            eveniet et placeat! Explicabo fugiat animi officiis vero similique ad, placeat amet, harum non omnis rem
+            sunt
+            eveniet et placeat! Explicabo fugiat animi officiis vero similique ad, placeat amet, harum non omnis rem
+            sunt
+        </div>
+    </div>
+
+    <div>
+        <div style="color: red;">
+            解决父元素高度塌陷问题并消除前后浮动的影响 方案二：在兄弟元素后面添加一个空元素然后 .empty-element{clear: both;}
+            <div class="div">
+                <div class="box A2">A2</div>
+                <div class="box B2">B2</div>
+                <div class="box C2">C2</div>
+
+                <div class="empty-element"></div>
+            </div>
+            <div style="background-color: rgb(42, 165, 126);">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam fuga quae animi corporis, cum
+                quibusdam
+                saepe doloribus accusantium inventore dolor deleniti ab vitae delectus? Facere earum, sint quasi
+                nesciunt
+                quae
+                mollitia molestias officia. Eaque id dolorum labore libero. Necessitatibus repellendus nisi ea suscipit
+                quidem
+                reiciendis quod nostrum magnam, impedit nemo? Cumque libero pariatur tenetur, molestiae deleniti
+                possimus
+                nesciunt qui quod molestias fugiat odio eius rerum sequi maxime exercitationem esse iste laudantium vero
+                dolor
+                eveniet et placeat! Explicabo fugiat animi officiis vero similique ad, placeat amet, harum non omnis rem
+                sunt
+                eveniet et placeat! Explicabo fugiat animi officiis vero similique ad, placeat amet, harum non omnis rem
+                sunt
+                eveniet et placeat! Explicabo fugiat animi officiis vero similique ad, placeat amet, harum non omnis rem
+                sunt
+            </div>
+        </div>
+
+        <div>
+            <div style="color: red;">
+                解决父元素高度塌陷问题并消除前后浮动的影响 方案三 (最优的方案)
+                .divsan ::after {content: "";display: block; clear: both;}
+            </div>
+            <div class="divsan">
+                <div class="box A3">A3</div>
+                <div class="box B3">B3</div>
+                <div class="box C3">C3</div>
+                <div class="box D3">D3</div>
+
+            </div>
+            <div style="background-color: rgb(42, 165, 126);">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam fuga quae animi corporis, cum
+                quibusdam
+                saepe doloribus accusantium inventore dolor deleniti ab vitae delectus? Facere earum, sint quasi
+                nesciunt
+                quae
+                mollitia molestias officia. Eaque id dolorum labore libero. Necessitatibus repellendus nisi ea suscipit
+                quidem
+                reiciendis quod nostrum magnam, impedit nemo? Cumque libero pariatur tenetur, molestiae deleniti
+                possimus
+                nesciunt qui quod molestias fugiat odio eius rerum sequi maxime exercitationem esse iste laudantium vero
+                dolor
+                eveniet et placeat! Explicabo fugiat animi officiis vero similique ad, placeat amet, harum non omnis rem
+                sunt
+                eveniet et placeat! Explicabo fugiat animi officiis vero similique ad, placeat amet, harum non omnis rem
+                sunt
+                eveniet et placeat! Explicabo fugiat animi officiis vero similique ad, placeat amet, harum non omnis rem
+                sunt
+            </div>
+        </div>
 
 
 
@@ -104,7 +250,11 @@
 
 
 
-    <script type="text/javascript" src="#">    /*javascript代码  */</script>
+
+
+
+
+        <script type="text/javascript" src="#">    /*javascript代码  */</script>
 
 </body>
 
