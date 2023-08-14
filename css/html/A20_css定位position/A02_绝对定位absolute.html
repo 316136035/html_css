@@ -15,8 +15,16 @@
         .container {
             /* 设置背景颜色 */
             background-color: burlywood;
+            /* 设置边框宽度 */
+            border: 10px solid black;
             /* 设置内边距 */
-            padding: 10px;
+            padding: 20px;
+            /* 开启相对定位 */
+            position: relative;
+
+
+
+
         }
 
         .div {
@@ -29,29 +37,33 @@
         .div1 {
             /* 设置背景颜色 */
             background-color: chartreuse;
+
         }
 
         .div2 {
             /* 设置背景颜色 */
             background-color: rgb(255, 0, 30);
-            /* 开启相对定位 relative--相对自身的位置定位 (左右/上下并不能一起使用)*/
-            position: relative;
-            /* 相对定位左边50px */
-            left: 200px;
-            /* 相对定位上边50px */
-            top: 50px;
-            /* 相对定位右边50px */
+            /* 开启绝对定位 (左右/上下并不能一起使用)*
+            （参考的是包含块，没有脱离文档流的元素，父元素就是包含块，对应脱离文档流的元素，第一个开启定位的祖先元素，就是包含块） */
+            position: absolute;
+            /* 绝对定位左边50px */
+            left:400px;
+            /* 绝对定位上边50px */
+            top: 220px;
+            /* 绝对定位右边50px */
             /* right: 50px; */
-            /* 相对定位下边50px */
+            /* 绝对定位下边50px */
             /* bottom: 50px; */
             /* 设置内边距 */
             /* padding: 20px; */
             /* 设置边框宽度 */
             border: 5px solid black;
-            /* 设置外边距 */
-            /* margin: 20px; */
+            /* 设置外边距  必须配置top  对应的*/
+            margin-top: 20px;
             /* 设置浮动 */
             /* float: left; */
+
+
 
         }
 
@@ -72,21 +84,10 @@
         <div class="div div3">C</div>
     </div>
     <div>
-         <h3>注意:绝大多数情况下，相对定位，会与绝对定位配合使用。</h3>
-        <div>相对定位,相对自己原来的位置</div>
-        <h3>如何设置相对定位:</h3>
-        <div>给元素设置 position:relative 即可实现相对定位,可以使用 left 、right 、 top 、 bottom 四个属性调整位置。 </div>
-        <h3> 相对定位的特点:</h3>
-        <div>1.不会脱离文档流元素位置的变化，只是视觉效果上的变化，不会对其他元素产生任何影响</div>
-        <div>2.定位元素的显示层级比普通元素高，无论什么定位，显示层级都是一样的。 <span>定位的元素会盖在普通元素之上</span> <span>都发生定位的两个元素，后写的元素会盖在先写的元素之上。</span></div>
-        <div>3.left 不能和 right 一起设置，top 和 bottom 不能一起设置</div>
-        <div>4.相对定位的元素，也能继续浮动，但不推荐这样做。</div>
-        <div>5.相对行为的元素，也能通过 margin 调整位置，但不推荐这样做</div>
-
-
 
 
     </div>
+
 
 
 
