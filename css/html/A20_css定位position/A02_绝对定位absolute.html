@@ -21,11 +21,7 @@
             padding: 20px;
             /* 开启相对定位 */
             position: relative;
-
-
-
-
-        }
+      }
 
         .div {
             /* 设置宽度 */
@@ -47,9 +43,9 @@
             （参考的是包含块，没有脱离文档流的元素，父元素就是包含块，对应脱离文档流的元素，第一个开启定位的祖先元素，就是包含块） */
             position: absolute;
             /* 绝对定位左边50px */
-            left:400px;
+            left:20px;
             /* 绝对定位上边50px */
-            top: 220px;
+            /* top: 220px; */
             /* 绝对定位右边50px */
             /* right: 50px; */
             /* 绝对定位下边50px */
@@ -57,13 +53,12 @@
             /* 设置内边距 */
             /* padding: 20px; */
             /* 设置边框宽度 */
-            border: 5px solid black;
+            /* border: 5px solid black; */
             /* 设置外边距  必须配置top  对应的*/
-            margin-top: 20px;
-            /* 设置浮动 */
-            /* float: left; */
-
-
+            /* margin-top: 20px; */
+            /* 绝对定位和浮动不能共存  */
+            /* 过渡 动画 */
+            transition: 0.1s all linear;
 
         }
 
@@ -71,6 +66,11 @@
             /* 设置背景颜色 */
             background-color: rgb(17, 0, 255);
         }
+        /* 获取容器给 hover鼠标悬浮时 设置div2中样式*/
+        .container:hover .div2{
+           left:200px;
+        }
+    
     </style>
 
 </head>
