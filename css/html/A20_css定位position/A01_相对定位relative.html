@@ -37,14 +37,21 @@
             /* 开启相对路径 relative--相对自身的位置定位 (左右/上下并不能一起使用)*/
             position: relative;
             /* 相对路径左边50px */
-            left: 50px;
+            left: 200px;
             /* 相对路径上边50px */
             top: 50px;
             /* 相对路径右边50px */
             /* right: 50px; */
             /* 相对路径下边50px */
             /* bottom: 50px; */
-
+            /* 设置内边距 */
+            /* padding: 20px; */
+            /* 设置边框宽度 */
+            border: 5px solid black;
+            /* 设置外边距 */
+            /* margin: 20px; */
+            /* 设置浮动 */
+            /* float: left; */
 
         }
 
@@ -58,10 +65,27 @@
 
 <body>
 
+
     <div class="container">
         <div class="div div1">A</div>
         <div class="div div2">B</div>
         <div class="div div3">C</div>
+    </div>
+    <div>
+         <h3>注意:绝大多数情况下，相对定位，会与绝对定位配合使用。</h3>
+        <div>相对定位,相对自己原来的位置</div>
+        <h3>如何设置相对定位:</h3>
+        <div>给元素设置 position:relative 即可实现相对定位,可以使用 left 、right 、 top 、 bottom 四个属性调整位置。 </div>
+        <h3> 相对定位的特点:</h3>
+        <div>1.不会脱离文档流元素位置的变化，只是视觉效果上的变化，不会对其他元素产生任何影响</div>
+        <div>2.定位元素的显示层级比普通元素高，无论什么定位，显示层级都是一样的。 <span>定位的元素会盖在普通元素之上</span> <span>都发生定位的两个元素，后写的元素会盖在先写的元素之上。</span></div>
+        <div>3.left 不能和 right 一起设置，top 和 bottom 不能一起设置</div>
+        <div>4.相对定位的元素，也能继续浮动，但不推荐这样做。</div>
+        <div>5.相对行为的元素，也能通过 margin 调整位置，但不推荐这样做</div>
+
+
+
+
     </div>
 
 
