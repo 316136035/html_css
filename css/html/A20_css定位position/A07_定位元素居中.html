@@ -47,6 +47,26 @@
 <body>
     <div class="content">
         <div class="absolute">绝对定位元素</div>
+    </div>
+    <div>
+        <h3>让定位元素在包含块中居中</h3>
+         <h5>注意:该定位的元素必须设置宽高!!!</h5>
+        <div>
+            <h3>方案一</h3>
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto
+        </div>
+        <div>
+            <h3>方案二</h3>
+            left: 50%;  
+            top: 58%;
+            margin-left:负的宽度一半;
+            margin-top:负的高度一半;       
+
+        </div>
 
     </div>
 
