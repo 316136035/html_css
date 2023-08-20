@@ -1,0 +1,80 @@
+/* 基本css属性 */
+/* 左浮动 */
+.float-left {
+    float: left;
+}
+
+/* 右浮动 */
+.float-right {
+    float: right;
+}
+
+/* 清除浮动影响 */
+.clear-both::after {
+    content: "";
+    /* 设置为块元素 */
+    display: block;
+    /* 清除浮动影响 */
+    clear: both;
+}
+
+/* 版心 */
+.container {
+    width: 1190px;
+    background-color: aqua;
+    margin: 0 auto;
+}
+
+
+/* 顶部导航条 */
+.top {
+    background-color: #e3e4e5;
+    border: 1px solid #ddd;
+    height: 30px;
+
+}
+
+.top-welcome {
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    color: red;
+}
+
+
+.top-navigation-items li {
+    float: left;
+    margin-right: 10px;
+ 
+   
+}
+
+.top-navigation-items li a {
+    text-align:center;
+    line-height:  30px;
+    border-right: 1px solid #999;
+    padding-right: 10px;
+}
+.login-register :first-child{
+   border-right: 0;
+}
+
+.top-navigation-items li:last-child a  {
+    border-right: 0;
+}
+/* ............... */
+.header{
+    height: 140px;
+    background-color: coral;
+}
+.header-log img{
+    width: 190px;
+    height: 120px;
+}
+
+.header .container div{
+    float: left;
+    background-color: chartreuse;
+    margin: 10px;
+}
