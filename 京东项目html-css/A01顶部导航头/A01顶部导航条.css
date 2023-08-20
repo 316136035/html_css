@@ -18,14 +18,6 @@
     clear: both;
 }
 
-/* 版心 */
-.container {
-    /* 宽度 */
-    width: 1190px;
-    /* 居中 */
-    margin: 0 auto;
-}
-
 
 /* 导航条 */
 .top {
@@ -37,6 +29,16 @@
     height: 30px;
 
 }
+
+
+/* 版心 */
+.container {
+    /* 宽度 */
+    width: 1190px;
+    /* 居中 */
+    margin: 0 auto;
+}
+
 
 /* 左侧欢迎词 */
 .top-welcome {
