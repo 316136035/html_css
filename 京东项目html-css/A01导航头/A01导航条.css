@@ -33,7 +33,7 @@
     height: 30px;
 
 }
-
+/* 左侧欢迎词 */
 .top-welcome {
     font-size: 20px;
     text-align: center;
@@ -42,24 +42,25 @@
     color: red;
 }
 
-
+/* 右侧导航区 */
 .top-navigation-items li {
     float: left;
     margin-right: 10px;
  
    
 }
-
+/* 右侧导航区中的a标签 */
 .top-navigation-items li a {
     text-align:center;
     line-height:  30px;
     border-right: 1px solid #999;
     padding-right: 10px;
 }
+/* 右侧导航区中的第一个a标签 */
 .login-register :first-child{
    border-right: 0;
 }
-
+/* 右侧导航区中的最后一个a标签 */
 .top-navigation-items li:last-child a  {
     border-right: 0;
 }
