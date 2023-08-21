@@ -3,10 +3,12 @@
 .float-left {
     float: left;
 }
+
 /* 右浮动 */
 .float-right {
     float: right;
 }
+
 /* 清除浮动影响 */
 .clear-both::after {
     content: "";
@@ -15,6 +17,7 @@
     /* 清除浮动影响 */
     clear: both;
 }
+
 /* 版心 */
 .container {
     /* 宽度 */
@@ -22,7 +25,7 @@
     /* 居中 */
     margin: 0 auto;
     /* 背景颜色 */
-    background-color: rgb(124, 172, 124);
+    /* background-color: rgb(124, 172, 124); */
 }
 
 /* ----------------------------导航条---------------------------------- */
@@ -35,10 +38,12 @@
     height: 30px;
 
 }
-.top-navigation-items{
+
+.top-navigation-items {
     /*清除空白处 */
     font-size: 0;
 }
+
 /* 左侧欢迎词 */
 .top-welcome {
     /* 字体大小 */
@@ -52,21 +57,23 @@
     /*  字符颜色*/
     color: red;
 }
+
 /* 右侧导航区 */
 .top-navigation-items li {
     /* 左浮动 */
     float: left;
-   
+
 
 
 }
+
 /* 右侧导航区中的a标签 */
 .top-navigation-items li a {
-     /* 字体大小 */
+    /* 字体大小 */
     font-size: 12px;
     /*字体类型  */
     font-family: Microsoft YaHei;
-     /* 字体居中 */
+    /* 字体居中 */
     text-align: center;
     /* 行距 */
     line-height: 30px;
@@ -76,35 +83,143 @@
     padding-right: 10px;
     padding-left: 10px;
 }
+
 /* 右侧导航区中的第一个a标签 */
 .login-register :first-child {
     /* 边框 */
     border-right: 0;
-     /* 内边框 */
+    /* 内边框 */
     padding-left: 0;
     padding-right: 0;
-    
+
 }
+
 /* 右侧导航区中的最后一个a标签 */
 .top-navigation-items li:last-child a {
-      /* 边框 */
+    /* 边框 */
     border-right: 0;
-     /* 内边框 */
+    /* 内边框 */
     padding-right: 0;
 }
 
 /* ----------------------------头部---------------------------------- */
-.header{
+.header {
     height: 140px;
-    background-color: rgb(160, 95, 96);
+    /* background-color: rgb(160, 95, 96); */
 }
-.header-img{
-    width: 190px;
+
+/*  图片区 */
+.header-img {
+    width: 170px;
     height: 120px;
-   
-      /* 设置背景图片组合写法(图片地址 是否重复图片 设置图片方位) */
-     background:  url("../resources静态资源/京东图标.png") no-repeat top center  ;
-     
-    
-    border: 10px solid red;
+    margin: 10px;
+    /* 设置背景图片组合写法(图片地址 是否重复图片 设置图片方位) */
+    background: url("../resources静态资源//image/京东图标.png") no-repeat top center;
+    /* 设置背景大小 */
+    background-size: 190px 120px;
+}
+
+/*  搜索区-导航区 */
+.header-search {
+    width: 810px;
+    height: 60px;
+    position: relative;
+    /* background-color: chocolate; */
+}
+
+.header-search-input-buttons {
+    font-size: 0;
+    padding-top: 24px;
+    position: relative;
+    left: 40px;
+    /* background-color: chartreuse; */
+}
+
+.header-search input {
+    width: 548px;
+    height: 34px;
+    border: 1px solid red;
+
+    font-size: 12px;
+
+}
+
+.header-search .search {
+    width: 58px;
+    height: 36px;
+    font-size: 12px;
+    background-image: url("../resources静态资源/image/搜索.png");
+    /*处理基线没有对齐的问题 */
+    vertical-align: bottom;
+    color: #ddd;
+
+
+}
+
+.header-search .shopping {
+    display: inline-block;
+    width: 138px;
+    height: 36px;
+    font-size: 12px;
+    background-color: chartreuse;
+    /*处理基线没有对齐的问题 */
+    vertical-align: bottom;
+    margin-left: 20px;
+    text-align: center;
+    line-height: 36px;
+
+}
+
+.header-nav1 {
+    width: 810px;
+    height: 20px;
+    /* background-color: rgb(30, 210, 171); */
+}
+
+.header-nav2 {
+    width: 810px;
+    height: 60px;
+    /* background-color: chocolate; */
+}
+
+
+.header-banner {
+    width: 170px;
+    height: 120px;
+    margin: 10px;
+    /* 设置背景图片组合写法(图片地址 是否重复图片 设置图片方位) */
+    background: url("../resources静态资源/image/广告.png") no-repeat top center;
+    /* 设置背景大小 */
+    background-size: 190px 120px;
+}
+
+/* ************************************** */
+.header-nav1 {
+    /* background-color: gold; */
+}
+
+.header-nav1 ul li {
+    position: relative;
+    left: 40px;
+    margin-right: 10px;
+    float: left;
+
+
+}
+
+.header-nav2 {
+    /* background-color: lightblue; */
+}
+
+.header-nav2 ul li {
+    position: relative;
+    top: 20px;
+    float: left;
+    font-size: 15px;
+    line-height: 40px;
+    margin: 0 8px;
+  
+
+
+
 }
