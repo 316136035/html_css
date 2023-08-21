@@ -283,6 +283,7 @@
     margin-top: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
+    position: relative;
 }
 .main-content-left-nav ul {
     padding-left: 18px;
@@ -291,6 +292,7 @@
 
  
 }
+
 .main-content-left-nav ul li a{
     height: 25px;
     line-height: 25px;
@@ -300,6 +302,14 @@
 
 }
 
+.main-content-left-nav ul li >a:hover {
+  color: rgb(246, 244, 244);
+ 
+}
+.main-content-left-nav ul> li:hover {
+  background-color: rgb(249, 4, 4);
+   
+  }
 
 .content-middle-banner {
     width: 790px;
@@ -318,3 +328,18 @@
 }
 
 /* #endregion--------内容区结束*/
+
+.content-middle-banner{
+    background-image: url("../resources静态资源/image/内容区中间.jpg");
+
+}
+.second-menu{
+    width: 800px;
+    height:480px;
+    background-color: rgb(175, 122, 14);
+    background-color: hsl(50 33% 25% / 0.75); 
+    position: absolute;
+    top:0;
+    left: 190px;
+
+}
