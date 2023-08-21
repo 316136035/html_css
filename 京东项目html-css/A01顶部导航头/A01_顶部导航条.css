@@ -70,9 +70,9 @@
 
 /* 右侧导航区中的a标签 */
 .top-navigation-items li a {
-       /* 字体大小 */
+     /* 字体大小 */
     font-size: 12px;
-    /*  */
+    /*字体类型  */
     font-family: Microsoft YaHei;
      /* 字体居中 */
     text-align: center;
@@ -89,6 +89,7 @@
 .login-register :first-child {
     /* 边框 */
     border-right: 0;
+     /* 内边框 */
     padding-left: 0;
     padding-right: 0;
     
@@ -98,5 +99,6 @@
 .top-navigation-items li:last-child a {
       /* 边框 */
     border-right: 0;
-   ;
+     /* 内边框 */
+    padding-right: 0;
 }
