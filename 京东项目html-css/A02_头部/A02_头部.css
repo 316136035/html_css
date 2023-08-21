@@ -108,7 +108,7 @@
     /* background-color: rgb(160, 95, 96); */
 }
 
-/*  图片区 */
+/*  头部-图片区 */
 .header-img {
     width: 170px;
     height: 120px;
@@ -119,14 +119,14 @@
     background-size: 190px 120px;
 }
 
-/*  搜索区-导航区 */
+/*  头部 -搜索区+导航区 */
 .header-search {
     width: 810px;
     height: 60px;
     position: relative;
     /* background-color: chocolate; */
 }
-
+/* 头部 -搜索区 输入框+按钮+链接  */
 .header-search-input-buttons {
     font-size: 0;
     padding-top: 24px;
@@ -134,16 +134,15 @@
     left: 40px;
     /* background-color: chartreuse; */
 }
-
+/* 头部 -搜索区 输入框*/
 .header-search input {
     width: 548px;
     height: 34px;
     border: 1px solid red;
-
     font-size: 12px;
 
 }
-
+/* 头部 -搜索区 按钮*/
 .header-search .search {
     width: 58px;
     height: 36px;
@@ -155,7 +154,7 @@
 
 
 }
-
+/* 头部 -搜索区 购物车*/
 .header-search .shopping {
     display: inline-block;
     width: 138px;
@@ -169,35 +168,13 @@
     line-height: 36px;
 
 }
-
+/* ------------------------------------导航区1----------------------------------- */
 .header-nav1 {
     width: 810px;
     height: 20px;
     /* background-color: rgb(30, 210, 171); */
 }
 
-.header-nav2 {
-    width: 810px;
-    height: 60px;
-    /* background-color: chocolate; */
-}
-
-
-.header-banner {
-    width: 170px;
-    height: 120px;
-    margin: 10px;
-    /* 设置背景图片组合写法(图片地址 是否重复图片 设置图片方位) */
-    background: url("../resources静态资源/image/广告.png") no-repeat top center;
-    /* 设置背景大小 */
-    background-size: 190px 120px;
-}
-
-
-
-/* .header-nav1 {
-    background-color: gold;
-} */
 
 .header-nav1 ul li {
     position: relative;
@@ -207,10 +184,14 @@
 
 
 }
+/* ------------------------------------导航区2----------------------------------- */
 
-/* .header-nav2 {
-    background-color: lightblue;
-} */
+.header-nav2 {
+    width: 810px;
+    height: 60px;
+    /* background-color: chocolate; */
+}
+
 
 .header-nav2 ul li {
     position: relative;
@@ -223,4 +204,15 @@
 
 
 
+}
+/* ------------------------------------广告区----------------------------------- */
+
+.header-banner {
+    width: 170px;
+    height: 120px;
+    margin: 10px;
+    /* 设置背景图片组合写法(图片地址 是否重复图片 设置图片方位) */
+    background: url("../resources静态资源/image/广告.png") no-repeat top center;
+    /* 设置背景大小 */
+    background-size: 190px 120px;
 }
