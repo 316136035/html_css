@@ -69,7 +69,7 @@
 }
 
 /* 右侧导航区中的a标签 */
-.top-navigation-items li a {
+.top-navigation-items li >a {
      /* 字体大小 */
     font-size: 12px;
     /*字体类型  */
