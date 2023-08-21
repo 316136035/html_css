@@ -193,10 +193,11 @@
     background-size: 190px 120px;
 }
 
-/* ************************************** */
-.header-nav1 {
-    /* background-color: gold; */
-}
+
+
+/* .header-nav1 {
+    background-color: gold;
+} */
 
 .header-nav1 ul li {
     position: relative;
@@ -207,9 +208,9 @@
 
 }
 
-.header-nav2 {
-    /* background-color: lightblue; */
-}
+/* .header-nav2 {
+    background-color: lightblue;
+} */
 
 .header-nav2 ul li {
     position: relative;
