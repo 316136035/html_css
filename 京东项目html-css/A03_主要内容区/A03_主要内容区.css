@@ -102,21 +102,22 @@
     /* 内边框 */
     padding-right: 0;
 }
+
 /*#endregion----------- 导航条结束 */
 /* #region-----------头部开始*/
-.header{
+.header {
     /* 背景颜色 */
     /* background-color: rgb(149, 117, 117); */
     /* 边框 */
     border-bottom: 1px solid rgb(235, 3, 3);
-  
+
 }
 
 /*  头部-图片区 */
 .header-img {
     /* 高度 */
     width: 170px;
-     /* 宽度 */
+    /* 宽度 */
     height: 120px;
     /* 外边框 */
     margin: 10px;
@@ -128,31 +129,33 @@
 
 /*  头部 -搜索区+导航区 */
 .header-search {
-      /* 高度 */
+    /* 高度 */
     width: 810px;
-      /* 宽度 */
+    /* 宽度 */
     height: 60px;
     /* 开启相对定位 */
     position: relative;
     /* background-color: chocolate; */
 }
+
 /* 头部 -搜索区 输入框+按钮+链接  */
 .header-search-input-buttons {
     /* 空包文本处理 */
     font-size: 0;
     /* 内上边距 */
     padding-top: 24px;
-     /* 开启相对定位 */
+    /* 开启相对定位 */
     position: relative;
     /* 相对定位 左 */
     left: 40px;
     /* background-color: chartreuse; */
 }
+
 /* 头部 -搜索区 输入框*/
 .header-search input {
     /* 宽度 */
     width: 548px;
-     /* 高度 */
+    /* 高度 */
     height: 34px;
     /* 边框 */
     border: 1px solid red;
@@ -160,28 +163,30 @@
     font-size: 12px;
 
 }
+
 /* 头部 -搜索区 按钮*/
 .header-search .search {
-     /* 宽度 */
+    /* 宽度 */
     width: 58px;
     /* 高度 */
     height: 36px;
-       /* 字符大小 */
+    /* 字符大小 */
     font-size: 12px;
     /* 引入图片作为背景 */
     background-image: url("../resources静态资源/image/搜索.png");
     /*处理基线没有对齐的问题 垂直对齐：底部； */
     vertical-align: bottom;
 }
+
 /* 头部 -搜索区 购物车*/
 .header-search .shopping {
     /* 改成行内联块元素 */
     display: inline-block;
-     /* 宽度 */
+    /* 宽度 */
     width: 138px;
-      /* 高度 */
+    /* 高度 */
     height: 36px;
-        /* 字符大小 */
+    /* 字符大小 */
     font-size: 12px;
     /* 背景颜色 */
     background-color: chartreuse;
@@ -191,15 +196,16 @@
     margin-left: 20px;
     /* 字符水平居中 */
     text-align: center;
-     /* 字符垂直居中 */
+    /* 字符垂直居中 */
     line-height: 36px;
 
 }
+
 /* ------------------------------------导航区1----------------------------------- */
 .header-nav1 {
     /* 宽度 */
     width: 810px;
-       /* 高度 */
+    /* 高度 */
     height: 20px;
     /* background-color: rgb(30, 210, 171); */
 }
@@ -217,23 +223,24 @@
 
 
 }
+
 /* ------------------------------------导航区2----------------------------------- */
 
 .header-nav2 {
-      /* 宽度 */
+    /* 宽度 */
     width: 810px;
-       /* 高度 */
+    /* 高度 */
     height: 60px;
     /* background-color: chocolate; */
 }
 
 
 .header-nav2 ul li {
-     /* 开启相对定位 */
+    /* 开启相对定位 */
     position: relative;
-     /*相对定位 上20px  */
+    /*相对定位 上20px  */
     top: 20px;
-     /* 浮动 */
+    /* 浮动 */
     float: left;
     /* 字体大小 */
     font-size: 15px;
@@ -241,11 +248,12 @@
     line-height: 40px;
     /* 外边距 左0 右8 */
     margin: 0 8px;
-  
+
 
 
 
 }
+
 /* ------------------------------------广告区----------------------------------- */
 
 .header-banner {
@@ -260,4 +268,58 @@
     /* 设置背景大小 */
     background-size: 190px 120px;
 }
+
 /* #endregion-----头部结束*/
+/* #region-----------内容区*/
+
+
+.content-left-nav {
+
+    width: 190px;
+    height: 480px;
+    /* background-color: rgb(133, 77, 4); */
+    margin-top: 10px;
+}
+.content-left-nav ul {
+    padding-left: 18px;
+    margin: 10px;
+    height: 25px;
+    line-height: 25px;
+
+ 
+}
+.content-left-nav ul li a{
+    font-family:Microsoft YaHei;
+    color: #333;
+    font-size: 12px;
+
+}
+
+
+.content-left-nav ul li ::after {
+   content: "/";
+
+}
+
+.content-left-nav ul li a:last-child::after{
+background-color: darkgoldenrod;
+content: "";
+ }
+
+.content-middle-banner {
+    width: 790px;
+    height: 480px;
+    background-color: rgb(60, 4, 133);
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.content-right-other {
+    width: 190px;
+    height: 480px;
+    background-color: rgb(4, 133, 103);
+    margin-top: 10px;
+}
+
+/* #endregion--------内容区结束*/
