@@ -307,7 +307,7 @@
 }
 
 /* #endregion内容区 三个框 结束*/
-/* #region内容区中左边+中间开始 */
+/* #region内容区中左边+中间显示区开始 */
 /* 内容区 左边  ul元素 */
 .main-content-left-nav ul {
     padding-left: 18px;
@@ -356,6 +356,7 @@
     /* 默认为隐藏 */
     display: none;
 }
+
 /* 二级菜单样式 */
 .second-menu-top>a {
     font-size: 12px;
@@ -385,11 +386,8 @@
 .second-menu dl dd {
     height: 20px;
     float: left;
-
     padding-left: 10px;
     padding-right: 10px;
-
-
 }
 
 /* 二级菜单样式 */
@@ -397,5 +395,5 @@
     border-left: 1px solid rgb(153, 153, 153);
     ;
 }
-/* #endregion内容区中左边+中间结束 */
 
+/* #endregion内容区中左边+中间显示区结束 */
