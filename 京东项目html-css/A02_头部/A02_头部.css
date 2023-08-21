@@ -114,7 +114,7 @@
     height: 120px;
     margin: 10px;
     /* 设置背景图片组合写法(图片地址 是否重复图片 设置图片方位) */
-    background: url("../resources静态资源//image/京东图标.png") no-repeat top center;
+    background: url("../resources静态资源/image/京东图标.png") no-repeat top center;
     /* 设置背景大小 */
     background-size: 190px 120px;
 }
