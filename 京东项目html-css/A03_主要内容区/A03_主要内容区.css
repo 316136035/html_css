@@ -104,11 +104,12 @@
 }
 /*#endregion----------- 导航条结束 */
 /* #region-----------头部开始*/
-.header {
-    /* 高度 */
-    height: 140px;
+.header{
     /* 背景颜色 */
-    /* background-color: rgb(160, 95, 96); */
+    /* background-color: rgb(149, 117, 117); */
+    /* 边框 */
+    border-bottom: 1px solid rgb(235, 3, 3);
+  
 }
 
 /*  头部-图片区 */
