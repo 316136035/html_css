@@ -105,19 +105,14 @@
 /*#endregion----------- 导航条结束 */
 /* #region-----------头部开始*/
 .header {
-    /* 高度 */
     height: 140px;
-    /* 背景颜色 */
     /* background-color: rgb(160, 95, 96); */
 }
 
 /*  头部-图片区 */
 .header-img {
-    /* 高度 */
     width: 170px;
-     /* 宽度 */
     height: 120px;
-    /* 外边框 */
     margin: 10px;
     /* 设置背景图片组合写法(图片地址 是否重复图片 设置图片方位) */
     background: url("../resources静态资源/image/京东图标.png") no-repeat top center;
@@ -127,91 +122,65 @@
 
 /*  头部 -搜索区+导航区 */
 .header-search {
-      /* 高度 */
     width: 810px;
-      /* 宽度 */
     height: 60px;
-    /* 开启相对定位 */
     position: relative;
     /* background-color: chocolate; */
 }
 /* 头部 -搜索区 输入框+按钮+链接  */
 .header-search-input-buttons {
-    /* 空包文本处理 */
     font-size: 0;
-    /* 内上边距 */
     padding-top: 24px;
-     /* 开启相对定位 */
     position: relative;
-    /* 相对定位 左 */
     left: 40px;
     /* background-color: chartreuse; */
 }
 /* 头部 -搜索区 输入框*/
 .header-search input {
-    /* 宽度 */
     width: 548px;
-     /* 高度 */
     height: 34px;
-    /* 边框 */
     border: 1px solid red;
-    /* 字符大小 */
     font-size: 12px;
 
 }
 /* 头部 -搜索区 按钮*/
 .header-search .search {
-     /* 宽度 */
     width: 58px;
-    /* 高度 */
     height: 36px;
-       /* 字符大小 */
     font-size: 12px;
-    /* 引入图片作为背景 */
     background-image: url("../resources静态资源/image/搜索.png");
-    /*处理基线没有对齐的问题 垂直对齐：底部； */
+    /*处理基线没有对齐的问题 */
     vertical-align: bottom;
+    color: #ddd;
+
+
 }
 /* 头部 -搜索区 购物车*/
 .header-search .shopping {
-    /* 改成行内联块元素 */
     display: inline-block;
-     /* 宽度 */
     width: 138px;
-      /* 高度 */
     height: 36px;
-        /* 字符大小 */
     font-size: 12px;
-    /* 背景颜色 */
     background-color: chartreuse;
-    /*处理基线没有对齐的问题   垂直对齐：底部；*/
+    /*处理基线没有对齐的问题 */
     vertical-align: bottom;
-    /* 外 左边距 */
     margin-left: 20px;
-    /* 字符水平居中 */
     text-align: center;
-     /* 字符垂直居中 */
     line-height: 36px;
 
 }
 /* ------------------------------------导航区1----------------------------------- */
 .header-nav1 {
-    /* 宽度 */
     width: 810px;
-       /* 高度 */
     height: 20px;
     /* background-color: rgb(30, 210, 171); */
 }
 
 
 .header-nav1 ul li {
-    /* 开启相对定位 */
     position: relative;
-    /*相对定位 左 40px  */
     left: 40px;
-    /* 右外边框 */
     margin-right: 10px;
-    /* 浮动 */
     float: left;
 
 
@@ -219,26 +188,18 @@
 /* ------------------------------------导航区2----------------------------------- */
 
 .header-nav2 {
-      /* 宽度 */
     width: 810px;
-       /* 高度 */
     height: 60px;
     /* background-color: chocolate; */
 }
 
 
 .header-nav2 ul li {
-     /* 开启相对定位 */
     position: relative;
-     /*相对定位 上20px  */
     top: 20px;
-     /* 浮动 */
     float: left;
-    /* 字体大小 */
     font-size: 15px;
-    /* 字符居中 */
     line-height: 40px;
-    /* 外边距 左0 右8 */
     margin: 0 8px;
   
 
@@ -248,11 +209,8 @@
 /* ------------------------------------广告区----------------------------------- */
 
 .header-banner {
-    /* 宽度 */
     width: 170px;
-    /* 高度 */
     height: 120px;
-    /* 外边距 */
     margin: 10px;
     /* 设置背景图片组合写法(图片地址 是否重复图片 设置图片方位) */
     background: url("../resources静态资源/image/广告.png") no-repeat top center;
