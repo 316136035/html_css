@@ -1,14 +1,12 @@
-/* 基本css属性 */
+/* --------------------基本css属性------------------ */
 /* 左浮动 */
 .float-left {
     float: left;
 }
-
 /* 右浮动 */
 .float-right {
     float: right;
 }
-
 /* 清除浮动影响 */
 .clear-both::after {
     content: "";
@@ -17,20 +15,6 @@
     /* 清除浮动影响 */
     clear: both;
 }
-
-
-/* 导航条 */
-.top {
-    /* 背景颜色 */
-    background-color: #e3e4e5;
-    /* 边距 */
-    border: 1px solid #ddd;
-    /* 高度 */
-    height: 30px;
-
-}
-
-
 /* 版心 */
 .container {
     /* 宽度 */
@@ -41,6 +25,16 @@
     background-color: rgb(124, 172, 124);
 }
 
+/* ----------------------------导航条---------------------------------- */
+.top {
+    /* 背景颜色 */
+    background-color: #e3e4e5;
+    /* 边距 */
+    border: 1px solid #ddd;
+    /* 高度 */
+    height: 30px;
+
+}
 .top-navigation-items{
     /*清除空白处 */
     font-size: 0;
@@ -58,7 +52,6 @@
     /*  字符颜色*/
     color: red;
 }
-
 /* 右侧导航区 */
 .top-navigation-items li {
     /* 左浮动 */
@@ -67,7 +60,6 @@
 
 
 }
-
 /* 右侧导航区中的a标签 */
 .top-navigation-items li a {
      /* 字体大小 */
@@ -84,7 +76,6 @@
     padding-right: 10px;
     padding-left: 10px;
 }
-
 /* 右侧导航区中的第一个a标签 */
 .login-register :first-child {
     /* 边框 */
@@ -94,11 +85,26 @@
     padding-right: 0;
     
 }
-
 /* 右侧导航区中的最后一个a标签 */
 .top-navigation-items li:last-child a {
       /* 边框 */
     border-right: 0;
      /* 内边框 */
     padding-right: 0;
+}
+
+/* ----------------------------头部---------------------------------- */
+.header{
+    height: 140px;
+    background-color: rgb(160, 95, 96);
+}
+.header-img{
+    width: 190px;
+    height: 120px;
+   
+      /* 设置背景图片组合写法(图片地址 是否重复图片 设置图片方位) */
+     background:  url("../resources静态资源/京东图标.png") no-repeat top center  ;
+     
+    
+    border: 10px solid red;
 }

@@ -1,4 +1,4 @@
-/* 基本css属性 */
+/* --------------------基本css属性------------------ */
 /* 左浮动 */
 .float-left {
     float: left;
@@ -18,8 +18,19 @@
     clear: both;
 }
 
+/* 版心 */
+.container {
+    /* 宽度 */
+    width: 1190px;
+    /* 居中 */
+    margin: 0 auto;
+    /* 背景颜色 */
+    background-color: rgb(124, 172, 124);
+}
 
-/* 导航条 */
+
+/* ----------------------------导航条---------------------------------- */
+
 .top {
     /* 背景颜色 */
     background-color: #e3e4e5;
@@ -31,15 +42,7 @@
 }
 
 
-/* 版心 */
-.container {
-    /* 宽度 */
-    width: 1190px;
-    /* 居中 */
-    margin: 0 auto;
-    /* 背景颜色 */
-    background-color: rgb(124, 172, 124);
-}
+
 
 .top-navigation-items{
     /*清除空白处 */
