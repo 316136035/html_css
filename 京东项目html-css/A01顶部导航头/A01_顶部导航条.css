@@ -37,9 +37,14 @@
     width: 1190px;
     /* 居中 */
     margin: 0 auto;
+    /* 背景颜色 */
+    background-color: rgb(124, 172, 124);
 }
 
-
+.top-navigation-items{
+    /*清除空白处 */
+    font-size: 0;
+}
 /* 左侧欢迎词 */
 .top-welcome {
     /* 字体大小 */
@@ -58,14 +63,17 @@
 .top-navigation-items li {
     /* 左浮动 */
     float: left;
-    /* 外边框 */
-    margin-right: 10px;
+   
 
 
 }
 
 /* 右侧导航区中的a标签 */
 .top-navigation-items li a {
+       /* 字体大小 */
+    font-size: 12px;
+    /*  */
+    font-family: Microsoft YaHei;
      /* 字体居中 */
     text-align: center;
     /* 行距 */
@@ -74,16 +82,21 @@
     border-right: 1px solid #999;
     /* 内边框 */
     padding-right: 10px;
+    padding-left: 10px;
 }
 
 /* 右侧导航区中的第一个a标签 */
 .login-register :first-child {
     /* 边框 */
     border-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    
 }
 
 /* 右侧导航区中的最后一个a标签 */
 .top-navigation-items li:last-child a {
       /* 边框 */
     border-right: 0;
+   ;
 }
