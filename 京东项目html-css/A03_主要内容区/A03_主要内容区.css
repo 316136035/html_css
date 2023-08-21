@@ -270,9 +270,7 @@
 }
 
 /* #endregion-----头部结束*/
-/* #region-----------主要内容区*/
-
-/* 内容区*/
+/* #region内容区 三个框 开始*/
 .main-content {
     background-color: #f4e9e9;
     border: 1px solid red;
@@ -289,13 +287,32 @@
     position: relative;
 }
 
+/* 内容区中间显示区（二级菜单会定位到这里显示） */
+.content-middle-banner {
+    width: 790px;
+    height: 480px;
+    background-color: rgb(60, 4, 133);
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-image: url("../resources静态资源/image/内容区中间.jpg");
+}
+
+/* 内容区右边*/
+.content-right-other {
+    width: 190px;
+    height: 480px;
+    background-color: rgb(4, 133, 103);
+    margin-top: 10px;
+}
+
+/* #endregion内容区 三个框 结束*/
+/* #region内容区中左边+中间开始 */
 /* 内容区 左边  ul元素 */
 .main-content-left-nav ul {
     padding-left: 18px;
     height: 25px;
     line-height: 25px;
-
-
 }
 
 /* 内容区 左边  ul元素 中的li元素中的a 元素 */
@@ -311,7 +328,6 @@
 /* 内容区 左边  ul元素 中的li元素中的a :hover鼠标悬浮时 */
 .main-content-left-nav ul li>a:hover {
     color: rgb(246, 244, 244);
-
 }
 
 /* 内容区 左边  ul元素 中的li元素 :hover鼠标悬浮时 */
@@ -326,31 +342,7 @@
     display: block;
 }
 
-/* 内容区中间显示区（二级菜单会定位到这里显示） */
-.content-middle-banner {
-    width: 790px;
-    height: 480px;
-    background-color: rgb(60, 4, 133);
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-/* 内容区右边*/
-.content-right-other {
-    width: 190px;
-    height: 480px;
-    background-color: rgb(4, 133, 103);
-    margin-top: 10px;
-}
-
-/* #endregion--------内容区结束*/
-.content-middle-banner {
-    background-image: url("../resources静态资源/image/内容区中间.jpg");
-
-}
-
-/*内容区中间显示区（二级菜单会定位到这里显示） */
+/*定位到内容区中间显示区（二级菜单会定位到这里显示） */
 .second-menu {
     width: 760px;
     height: 440px;
@@ -363,11 +355,8 @@
     left: 190px;
     /* 默认为隐藏 */
     display: none;
-
-
-
 }
-
+/* 二级菜单样式 */
 .second-menu-top>a {
     font-size: 12px;
     background-color: #333;
@@ -375,34 +364,38 @@
     color: #fafafa;
 }
 
-.second-menu dl{
-    height:40px;
+/* 二级菜单样式 */
+.second-menu dl {
+    height: 40px;
     margin: 10px;
 }
-.second-menu dl dt{
+
+/* 二级菜单样式 */
+.second-menu dl dt {
     width: 70px;
-    height:40px;
+    height: 40px;
     float: left;
     padding-left: 10px;
     padding-right: 10px;
-    font-weight:  bold;
+    font-weight: bold;
     text-align: right;
 }
+
+/* 二级菜单样式 */
 .second-menu dl dd {
     height: 20px;
     float: left;
 
     padding-left: 10px;
     padding-right: 10px;
-    
 
-}
-.second-menu dl dd a{
-  
-    border-left: 1px solid rgb(153, 153, 153);;
-  
-    
 
 }
 
+/* 二级菜单样式 */
+.second-menu dl dd a {
+    border-left: 1px solid rgb(153, 153, 153);
+    ;
+}
+/* #endregion内容区中左边+中间结束 */
 
