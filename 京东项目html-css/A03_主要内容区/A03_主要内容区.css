@@ -397,3 +397,18 @@
 }
 
 /* #endregion内容区中左边+中间显示区结束 */
+/* #region内容区右边 */
+.content-right-othe-top{
+    width: 190px;
+    height: 194px;
+    padding-top: 10px;
+    background-color: chartreuse;
+   
+}
+.content-right-othe-bottom{
+    width: 190px;
+    height: 235px;
+    padding-top: 5px;
+    background-color: rgb(68, 0, 255);
+
+}
