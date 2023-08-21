@@ -273,6 +273,7 @@
 /* #region-----------主要内容区*/
 .main-content{
     background-color: #f4e9e9;
+    border: 1px solid red;
 }
 .main-content-left-nav {
 
@@ -299,16 +300,6 @@
 
 }
 
-
-.main-content-left-nav ul li ::after {
-   content: "/";
-
-}
-
-.main-content-left-nav ul li a:last-child::after{
-background-color: darkgoldenrod;
-content: "";
- }
 
 .content-middle-banner {
     width: 790px;
