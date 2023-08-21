@@ -270,37 +270,42 @@
 }
 
 /* #endregion-----头部结束*/
-/* #region-----------内容区*/
-
-.content-left-nav {
+/* #region-----------主要内容区*/
+.main-content{
+    background-color: #f4e9e9;
+}
+.main-content-left-nav {
 
     width: 190px;
-    height: 480px;
+    height: 460px;
     /* background-color: rgb(133, 77, 4); */
     margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
-.content-left-nav ul {
+.main-content-left-nav ul {
     padding-left: 18px;
-    margin: 10px;
     height: 25px;
     line-height: 25px;
 
  
 }
-.content-left-nav ul li a{
+.main-content-left-nav ul li a{
+    height: 25px;
+    line-height: 25px;
     font-family:Microsoft YaHei;
     color: #333;
-    font-size: 12px;
+    font-size: 14px;
 
 }
 
 
-.content-left-nav ul li ::after {
+.main-content-left-nav ul li ::after {
    content: "/";
 
 }
 
-.content-left-nav ul li a:last-child::after{
+.main-content-left-nav ul li a:last-child::after{
 background-color: darkgoldenrod;
 content: "";
  }
