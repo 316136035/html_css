@@ -271,12 +271,15 @@
 
 /* #endregion-----头部结束*/
 /* #region-----------主要内容区*/
-.main-content{
+
+/* 内容区*/
+.main-content {
     background-color: #f4e9e9;
     border: 1px solid red;
 }
-.main-content-left-nav {
 
+/* 内容区 左边  */
+.main-content-left-nav {
     width: 190px;
     height: 460px;
     background-color: rgb(250, 247, 250);
@@ -285,32 +288,45 @@
     padding-bottom: 10px;
     position: relative;
 }
+
+/* 内容区 左边  ul元素 */
 .main-content-left-nav ul {
     padding-left: 18px;
     height: 25px;
     line-height: 25px;
 
- 
+
 }
 
-.main-content-left-nav ul li a{
+/* 内容区 左边  ul元素 中的li元素中的a 元素 */
+.main-content-left-nav>ul>li>a {
     height: 25px;
     line-height: 25px;
-    font-family:Microsoft YaHei;
+    font-family: Microsoft YaHei;
     color: #333;
     font-size: 14px;
 
 }
 
-.main-content-left-nav ul li >a:hover {
-  color: rgb(246, 244, 244);
- 
-}
-.main-content-left-nav ul> li:hover {
-  background-color: rgb(249, 4, 4);
-   
-  }
+/* 内容区 左边  ul元素 中的li元素中的a :hover鼠标悬浮时 */
+.main-content-left-nav ul li>a:hover {
+    color: rgb(246, 244, 244);
 
+}
+
+/* 内容区 左边  ul元素 中的li元素 :hover鼠标悬浮时 */
+.main-content-left-nav ul>li:hover {
+    background-color: rgb(249, 4, 4);
+
+}
+
+/* 内容区 左边  ul元素 中的li元素 :hover鼠标悬浮时 选中second-menu元素 */
+.main-content-left-nav ul>li:hover .second-menu {
+    /* 设置为显示 */
+    display: block;
+}
+
+/* 内容区中间显示区（二级菜单会定位到这里显示） */
 .content-middle-banner {
     width: 790px;
     height: 480px;
@@ -320,6 +336,7 @@
     margin-right: 10px;
 }
 
+/* 内容区右边*/
 .content-right-other {
     width: 190px;
     height: 480px;
@@ -328,18 +345,64 @@
 }
 
 /* #endregion--------内容区结束*/
-
-.content-middle-banner{
+.content-middle-banner {
     background-image: url("../resources静态资源/image/内容区中间.jpg");
 
 }
-.second-menu{
-    width: 800px;
-    height:480px;
+
+/*内容区中间显示区（二级菜单会定位到这里显示） */
+.second-menu {
+    width: 760px;
+    height: 440px;
     background-color: rgb(175, 122, 14);
-    background-color: hsl(50 33% 25% / 0.75); 
+    /* background-color: hsl(70 50% 50% / 0.75); */
+    padding: 20px;
+    /* 开启绝对定位 */
     position: absolute;
-    top:0;
+    top: 0;
     left: 190px;
+    /* 默认为隐藏 */
+    display: none;
+
+
 
 }
+
+.second-menu-top>a {
+    font-size: 12px;
+    background-color: #333;
+    padding: 5px;
+    color: #fafafa;
+}
+
+.second-menu dl{
+    height:40px;
+    margin: 10px;
+}
+.second-menu dl dt{
+    width: 70px;
+    height:40px;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight:  bold;
+    text-align: right;
+}
+.second-menu dl dd {
+    height: 20px;
+    float: left;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    
+
+}
+.second-menu dl dd a{
+  
+    border-left: 1px solid rgb(153, 153, 153);;
+  
+    
+
+}
+
+
