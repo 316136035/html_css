@@ -29,7 +29,7 @@
 }
 
 /*#endregion 基本css属性结束*/
-/* #region --------导航条*/
+/* #region -------导航条*/
 .top {
     /* 背景颜色 */
     background-color: #e3e4e5;
@@ -104,7 +104,7 @@
 }
 
 /*#endregion----------- 导航条结束 */
-/* #region-----------头部开始*/
+/* #region -------头部开始*/
 .header {
     /* 背景颜色 */
     /* background-color: rgb(149, 117, 117); */
@@ -270,13 +270,16 @@
 }
 
 /* #endregion-----头部结束*/
-/* #region内容区 三个框 开始*/
+/* #region -------内容区 三个框 开始*/
 .main-content {
+    /* 内容区  */
+    /* 背景颜色 */
     background-color: #f4e9e9;
+    /* 边框 */
     border: 1px solid red;
 }
 
-/* 内容区 左边  */
+/* 内容区 左边   */
 .main-content-left-nav {
     width: 190px;
     height: 460px;
@@ -298,16 +301,18 @@
     background-image: url("../resources静态资源/image/内容区中间.jpg");
 }
 
+
+
 /* 内容区右边*/
 .content-right-other {
     width: 190px;
     height: 480px;
-    background-color: rgb(4, 133, 103);
+    /* background-color: rgb(4, 133, 103); */
     margin-top: 10px;
 }
 
 /* #endregion内容区 三个框 结束*/
-/* #region内容区中左边+中间显示区开始 */
+/* #region -------内容区中左边+中间显示区开始 */
 /* 内容区 左边  ul元素 */
 .main-content-left-nav ul {
     padding-left: 18px;
@@ -397,18 +402,155 @@
 }
 
 /* #endregion内容区中左边+中间显示区结束 */
-/* #region内容区右边 */
-.content-right-othe-top{
+/* #region -------内容区右边上方 图标/登录/注册 开始 */
+.content-right-othe-top {
     width: 190px;
     height: 194px;
-    padding-top: 10px;
-    background-color: chartreuse;
-   
+    /* background-color: chartreuse; */
+
 }
-.content-right-othe-bottom{
+
+/* 右上方图片 */
+.content-right-othe-top-log-Register-image {
+    /* 设置背景图片组合写法(图片地址 是否重复图片 设置图片方位) */
+    background: no-repeat center/80% url("../resources静态资源/image/log-Register.png");
+    width: 190px;
+    background-size: 40px 40px;
+    width: 190px;
+    height: 40px;
+    padding-top: 10px;
+
+}
+
+/* 右上方 登录/注册- */
+.content-right-othe-top-log-Register {
+    height: 16;
+    text-align: center;
+
+}
+
+/* 右上方 福利*/
+.content-right-othe-top-benefits {
+    height: 45px;
+    padding: 10px;
+    background-color: rgb(254, 237, 232);
+}
+
+/* 右上方 PLUS会员区 */
+.content-right-othe-top-plus {
+    height: 45px;
+    padding-left: 10px;
+    background-color: rgb(255, 240, 197);
+}
+
+/* #endregion内容区右边上方 图标/登录/注册 开始 */
+/* #region -------内容区右边方 开始 */
+.content-right-othe-bottom {
     width: 190px;
     height: 235px;
-    padding-top: 5px;
-    background-color: rgb(68, 0, 255);
+    padding-top: 10px;
+    background-color: rgb(246, 245, 247);
+    /* 处理margin塌陷问题  溢出：隐藏；*/
+    overflow: hidden;
+
+}
+
+.content-right-othe-bottom-list li {
+    width: 63px;
+    height: 55px;
+    float: left;
+    background-color: rgb(246, 245, 247);
+    text-align: center;
+
+
+
+}
+
+.content-right-othe-bottom-list ul:first-child {
+    margin-top: 10px;
+
+}
+
+.content-right-othe-bottom-list-img {
+    width: 63px;
+    height: 28px;
+    background-image: url("../resources静态资源/image/右下图.png");
+
+
+}
+
+
+.content-right-othe-bottom-list:nth-child(1) li:nth-child(1) .content-right-othe-bottom-list-img {
+    background-position: 0px -10px;
+}
+
+.content-right-othe-bottom-list:nth-child(1) li:nth-child(2) .content-right-othe-bottom-list-img {
+    background-position: -63px -10px;
+}
+
+.content-right-othe-bottom-list:nth-child(1) li:nth-child(3) .content-right-othe-bottom-list-img {
+    background-position: -126px -10px;
+}
+
+
+.content-right-othe-bottom-list:nth-child(2) li:nth-child(1) .content-right-othe-bottom-list-img {
+    background-position: 0px -65px;
+}
+
+.content-right-othe-bottom-list:nth-child(2) li:nth-child(2) .content-right-othe-bottom-list-img {
+    background-position: -63px -65px;
+}
+
+.content-right-othe-bottom-list:nth-child(2) li:nth-child(3) .content-right-othe-bottom-list-img {
+    background-position: -126px -65px;
+}
+
+.content-right-othe-bottom-list:nth-child(3) li:nth-child(1) .content-right-othe-bottom-list-img {
+    background-position: 0px -120px;
+}
+
+.content-right-othe-bottom-list:nth-child(3) li:nth-child(2) .content-right-othe-bottom-list-img {
+    background-position: -63px -120px;
+}
+
+.content-right-othe-bottom-list:nth-child(3) li:nth-child(3) .content-right-othe-bottom-list-img {
+    background-position: -126px -120px;
+}
+
+
+.content-right-othe-bottom-list:nth-child(4) li:nth-child(1) .content-right-othe-bottom-list-img {
+    background-position: 0px -175px;
+}
+
+.content-right-othe-bottom-list:nth-child(4) li:nth-child(2) .content-right-othe-bottom-list-img {
+    background-position: -63px -175px;
+}
+
+.content-right-othe-bottom-list:nth-child(4) li:nth-child(3) .content-right-othe-bottom-list-img {
+    background-position: -126px -175px;
+}
+
+/* #endregion内容区右边方 结束 */
+/* <!-- 内容区右边新闻区 --> */
+.content-right-othe-news {
+    overflow: hidden
+}
+
+.content-right-othe-news div:first-child {
+    color: red;
+    padding: 10px;
+}
+
+.content-right-othe-news div:last-child {
+    padding: 10px;
+    width: 126pox;
+    /* 不换行 */
+    word-break: keep-all;
+    /* 不换行 */
+    white-space: nowrap;
+    /* 内容超出宽度时隐藏超出部分的内容 */
+    overflow: hidden;
+    /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+    text-overflow: ellipsis;
 
 }
