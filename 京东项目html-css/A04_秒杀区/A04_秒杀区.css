@@ -306,7 +306,7 @@
     /* 背景颜色 */
     background-color: rgb(60, 4, 133);
     /* 外边框 上 （设置外边距最好在他的父类中设置overflow: hidden;）*/
-    margin-top: 10px ;
+    margin-top: 10px;
     /* 外边框 左 （设置外边距最好在他的父类中设置overflow: hidden;）*/
     margin-left: 10px;
     /* 外边框 右 （设置外边距最好在他的父类中设置overflow: hidden;）*/
@@ -519,6 +519,8 @@
     background-color: rgb(246, 245, 247);
     /* 处理margin塌陷问题  溢出：隐藏；*/
     overflow: hidden;
+    /* 设置鼠标指针样式为手型（要实现点击使用js实现） */
+    cursor: pointer;
 
 }
 
@@ -643,6 +645,7 @@
     /* 内边距 */
     padding: 10px;
 }
+
 /* 内容区右边新闻区的div中的最后一个元素 */
 .content-right-othe-news div:last-child {
     /* 内边距 */
@@ -664,83 +667,81 @@
 /* #region -------秒杀区  */
 
 
-.spike .container .spik-title{
+.spike .container .spik-title {
     width: 190px;
     height: 260px;
     background-color: red;
-   /* 处理margin塌陷问题  溢出：隐藏；*/
-   overflow: hidden;
+    /* 处理margin塌陷问题  溢出：隐藏；*/
+    overflow: hidden;
 }
-.spike .container .spik-title{
+
+.spike .container .spik-title {
     width: 190px;
     height: 260px;
     background-color: red;
 }
-.spike .container .spik-title div:first-child{
+
+.spike .container .spik-title div:first-child {
     margin-top: 30px;
     text-align: center;
     font-weight: 700;
     font-size: 30px;
 }
 
-.spike .container .spik-title div:nth-child(2){
+.spike .container .spik-title div:nth-child(2) {
     height: 100px;
     text-align: center;
     font-weight: 700;
     font-size: 30px;
     background-color: chartreuse;
 }
-.spike .container .spik-title div:nth-child(3){
+
+.spike .container .spik-title div:nth-child(3) {
     height: 40px;
     text-align: center;
-   font-size: 20px;
+    font-size: 20px;
     background-color: chartreuse;
 }
 
-.spike .container .spik-title div:nth-child(4){
+.spike .container .spik-title div:nth-child(4) {
     height: 100px;
     text-align: center;
-    
+
     background-color: rgb(0, 21, 255);
 }
 
-.spike .container  .spik-list:nth-child(2){
+.spike .container .spik-list:nth-child(2) {
     width: 200px;
     height: 260px;
     background-color: rgb(191, 255, 0);
 }
-.spike .container  .spik-list:nth-child(3){
+
+.spike .container .spik-list:nth-child(3) {
     width: 200px;
     height: 260px;
     background-color: rgb(255, 0, 25);
 }
 
-.spike .container  .spik-list:nth-child(4){
+.spike .container .spik-list:nth-child(4) {
     width: 200px;
     height: 260px;
     background-color: rgb(255, 247, 0);
 }
 
-.spike .container  .spik-list:nth-child(5){
+.spike .container .spik-list:nth-child(5) {
     width: 200px;
     height: 260px;
     background-color: rgb(255, 0, 0);
 }
 
-.spike .container  .spik-list:nth-child(6){
+.spike .container .spik-list:nth-child(6) {
     width: 200px;
     height: 260px;
     background-color: rgb(187, 255, 0);
 }
-.spike .container  .spik-list:nth-child(7){
+
+.spike .container .spik-list:nth-child(7) {
     width: 200px;
     height: 260px;
     background-color: rgb(255, 0, 60);
 }
-
-
-
-
-
-
-

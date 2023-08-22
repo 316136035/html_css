@@ -519,6 +519,9 @@
     background-color: rgb(246, 245, 247);
     /* 处理margin塌陷问题  溢出：隐藏；*/
     overflow: hidden;
+     /* 设置鼠标指针样式为手型（要实现点击使用js实现） */
+    cursor: pointer;
+
 
 }
 
