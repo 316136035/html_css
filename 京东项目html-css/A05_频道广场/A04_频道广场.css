@@ -855,6 +855,8 @@
     height: 570px;
     /* 处理溢出：隐藏； */
     overflow: hidden;
+     /* 设置鼠标指针样式为手型（要实现点击使用js实现） */
+     cursor: pointer;
 
 }
 /* 频道广场左边元素的子辈元素dic */
@@ -944,6 +946,8 @@
     width: 590px;
     /* 高度 */
     height: 570px;
+     /* 设置鼠标指针样式为手型（要实现点击使用js实现） */
+     cursor: pointer;
 }
 /* 频道广场右边 全部实例元素 单数元素 */
 .channel-square-right .channel-square-right-item>:nth-child(2n-1) {
