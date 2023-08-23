@@ -846,7 +846,8 @@
     margin: 0 auto 20px;
 }
 
-/* 频道广场右边--------------------------------------------------------------------------------------  */
+/* 频道广场左边--------------------------------------------------------------------------------------  */
+/* 频道广场左边元素 */
 .channel-square-left {
     /* 高度 */
     width: 580px;
@@ -856,14 +857,14 @@
     overflow: hidden;
 
 }
-
-.channel-square-left>div {
+/* 频道广场左边元素的子辈元素dic */
+.channel-square-left > div {
     /* 左浮动 */
     float: left;
 
 }
 
-
+/* 频道广场左边元素的子辈元素dic */
 .channel-square-left .channel-square-top {
     /* 宽度 */
     width: 280px;
@@ -876,7 +877,7 @@
 
 
 }
-
+/*  频道广场左边 上方 */
 .channel-square-left .channel-square-top {
     /* 宽度 */
     width: 280px;
@@ -889,7 +890,7 @@
 
 
 }
-
+/* 频道广场左边 下方 */
 .channel-square-left :nth-child(3) {
     /* 宽度 */
     width: 280px;
@@ -901,7 +902,7 @@
 
 
 }
-
+/* 频道广场左边 下方 */
 .channel-square-left :nth-child(4) {
     /* 宽度 */
     width: 280px;
@@ -914,12 +915,12 @@
 
 
 }
-
-.channel-square-left>div .subtitle {
+/* 频道广场左边 下方 */
+.channel-square-left > div .subtitle {
     /* 外边距 注意：外边距  设置外边距最好在他的父类中设置overflow: hidden;）*/
     margin: 10px;
 }
-
+/* 频道广场左边 下方 */
 .channel-square-left :nth-child(3) div :nth-child(1),
 .channel-square-left :nth-child(4) div :nth-child(1) {
     /* 内边距 左 */
@@ -937,13 +938,14 @@
 }
 
 /* 频道广场右边-------------------------------------------------------------------------------------- */
+/*频道广场右边 全部元素  */
 .channel-square-right {
     /* 宽度 */
     width: 590px;
     /* 高度 */
     height: 570px;
 }
-
+/* 频道广场右边 全部实例元素 单数元素 */
 .channel-square-right .channel-square-right-item>:nth-child(2n-1) {
      /* 宽度 */
     width: 290px;
@@ -955,7 +957,7 @@
     /* 左浮动 */
     float: left;
 }
-
+/* 频道广场右边 全部实例元素  双数元素 * */
 .channel-square-right .channel-square-right-item> :nth-child(2n) {
      /* 宽度 */
     width: 290px;
@@ -972,6 +974,7 @@
  
 }
 
+/* 频道广场右边 实例 全部子标题的第一行 */
 .channel-square-right-item li .subtitle :first-child {
     /* 内边距 左 */
     padding-left: 20px;
@@ -986,9 +989,9 @@
     /* 字体类型 */
     font-family: Microsoft YaHei;
 }
-
+/* 频道广场右边 全部实例的中的最后一个元素 */
 .channel-square-right-item li :last-child {
-   
+    /* 内边框 */
     padding-left: 30px;
 }
 
