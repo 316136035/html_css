@@ -855,12 +855,13 @@
     height: 570px;
     /* 处理溢出：隐藏； */
     overflow: hidden;
-     /* 设置鼠标指针样式为手型（要实现点击使用js实现） */
-     cursor: pointer;
+    /* 设置鼠标指针样式为手型（要实现点击使用js实现） */
+    cursor: pointer;
 
 }
+
 /* 频道广场左边元素的子辈元素dic */
-.channel-square-left > div {
+.channel-square-left>div {
     /* 左浮动 */
     float: left;
 
@@ -879,6 +880,7 @@
 
 
 }
+
 /*  频道广场左边 上方 */
 .channel-square-left .channel-square-top {
     /* 宽度 */
@@ -892,6 +894,7 @@
 
 
 }
+
 /* 频道广场左边 下方 */
 .channel-square-left :nth-child(3) {
     /* 宽度 */
@@ -904,6 +907,7 @@
 
 
 }
+
 /* 频道广场左边 下方 */
 .channel-square-left :nth-child(4) {
     /* 宽度 */
@@ -917,11 +921,13 @@
 
 
 }
+
 /* 频道广场左边 下方 */
-.channel-square-left > div .subtitle {
+.channel-square-left>div .subtitle {
     /* 外边距 注意：外边距  设置外边距最好在他的父类中设置overflow: hidden;）*/
     margin: 10px;
 }
+
 /* 频道广场左边 下方 */
 .channel-square-left :nth-child(3) div :nth-child(1),
 .channel-square-left :nth-child(4) div :nth-child(1) {
@@ -946,36 +952,38 @@
     width: 590px;
     /* 高度 */
     height: 570px;
-     /* 设置鼠标指针样式为手型（要实现点击使用js实现） */
-     cursor: pointer;
+    /* 设置鼠标指针样式为手型（要实现点击使用js实现） */
+    cursor: pointer;
 }
+
 /* 频道广场右边 全部实例元素 单数元素 */
 .channel-square-right .channel-square-right-item>:nth-child(2n-1) {
-     /* 宽度 */
+    /* 宽度 */
     width: 290px;
-        /* 高度 */
+    /* 高度 */
     height: 180px;
     /* background-color: rgb(0, 255, 76); */
-       /* 外边距 四个值代表 上，右，下，左  注意：外边距  设置外边距最好在他的父类中设置overflow: hidden;）*/
+    /* 外边距 四个值代表 上，右，下，左  注意：外边距  设置外边距最好在他的父类中设置overflow: hidden;）*/
     margin: 0 10px 10px 0;
     /* 左浮动 */
     float: left;
 }
+
 /* 频道广场右边 全部实例元素  双数元素 * */
 .channel-square-right .channel-square-right-item> :nth-child(2n) {
-     /* 宽度 */
+    /* 宽度 */
     width: 290px;
-     /* 高度 */
+    /* 高度 */
     height: 180px;
     /* background-color: rgb(255, 0, 111); */
-      /* 左浮动 */
+    /* 左浮动 */
     float: left;
 }
 
 .channel-square-right-item li .subtitle {
-/* 外边距  注意：外边距  设置外边距最好在他的父类中设置overflow: hidden;）*/
+    /* 外边距  注意：外边距  设置外边距最好在他的父类中设置overflow: hidden;）*/
     margin: 10px;
- 
+
 }
 
 /* 频道广场右边 实例 全部子标题的第一行 */
@@ -993,6 +1001,7 @@
     /* 字体类型 */
     font-family: Microsoft YaHei;
 }
+
 /* 频道广场右边 全部实例的中的最后一个元素 */
 .channel-square-right-item li :last-child {
     /*  */
@@ -1001,25 +1010,108 @@
 
 /* #endregion -------频道广场 结束 */
 /* #region -------底部 开始*/
-.footer-top{
-    height: 200px;
-    background-color: chartreuse;
-    padding: 20px  0 20px 0;
-}
-.footer-top-item >li{
-    width: 198px;
+/*  底部 上方*/
+.footer-top {
+    /* 高度 */
     height: 160px;
-    
- 
-   background-color: rgb(136, 0, 255);
-   float: left;
+    /* 内边距 四个值代表 上，右，下，左  注意：外边距  */
+    padding: 20px 0 20px 0;
+    /* 背景颜色 */
+    background-color: rgb(251, 245, 245);
 
 }
-.footer-top-item :last-child{
-    width: 200px;
-    height: 150px;
+/*  底部 上方 li元素*/
+.footer-top-items>li {
+    /* 宽度 */
+    width: 198px;
+    /* 左浮动 */
+    float: left;
+    /*处理 溢出：隐藏；问题  */
+    overflow: hidden;
+
+
+}
+
+/*  底部 上方 标题 */
+.footer-top-items>li>h5 {
+    /* 高度 */
+    height: 22px;
+    /* 字体大小 */
+    font-size: 14px;
+    /* 字体加粗 */
+    font-weight: bold;
+    /* 字体样式 */
+    font-family: 'Microsoft YaHei', 'Heiti SC', 'tahoma', 'arial', 'Hiragino' 'Sans GB', 'sans-seri';
+    /* 外边距 四个值代表 上，右，下，左  注意：外边距  设置外边距最好在他的父类中设置overflow: hidden;）*/
+    margin: 0 0 5px 0;
+
+}
+
+/*  底部 上方  内容 */
+.footer-top-items>li>ul>li {
+     /* 高度 */
+    height: 22px;
+     /* 字体大小 */
+    font-size: 12px;
+     /* 字体样式 */
+    font-family: 'Microsoft YaHei', 'Heiti SC', 'tahoma', 'arial', 'Hiragino' 'Sans GB', 'sans-seri';
+}
+/* 底部 上方  最后一个元素 中h5*/
+.footer-top-items :last-child h5 {
+    /* 外边距 四个值代表 上，右，下，左  注意：外边距  设置外边距最好在他的父类中设置overflow: hidden;）*/
+    margin: 0 0 15px 0;
+}
+/* 底部 上方  最后一个元素 中.view-details */
+.footer-top-items :last-child .view-details {
+    /* 外边距 四个值代表 上，右，下，左  注意：外边距  设置外边距最好在他的父类中设置overflow: hidden;）*/
+    margin: 0 0 15px 0;
+    /* a 标签是行内元素 改成块级元素（用于字体居右） */
+    display: block;
+    /* 字体居右 */
+    text-align: right;
+}
+
+/*底部 下方 */
+.footer-bottom {
+    /* 高度 */
+    height: 243px;
+    /* 内边距 四个值代表 上，右，下，左   */
+    padding: 20px 0 20px 0;
+    /* 背景颜色 */
+    background-color: rgb(251, 245, 245);
  
-   background-color: rgb(136, 0, 255);
-   float: right;
+}
+
+/* 底部 下方 每一行元素 */
+.footer-bottom-contents {
+    /* 字体居中 */
+    text-align: center;
+}
+
+/* 底部 下方 每一行元素中的ul元素*/
+.footer-bottom-contents ul {
+    /*  ul标签是块级元素 改成行内块元素（用于字体也居中）*/
+    display: inline-block;
+}
+
+/* 底部 下方 每一行元素的ul元素中的li元素*/
+.footer-bottom-contents ul li {
+    /* 左浮动 */
+    float: left;
+}
+
+/* 底部 下方 每一行元素的ul元素的li元素中的a元素*/
+.footer-bottom-contents ul li a {
+     /* 内边距 四个值代表 上，右，下，左   */
+    padding: 0 8px 0 8px;
+    /* 边框 左 */
+    border-left: 1px solid #999;
+    color: #999;
+}
+
+/* 底部 下方 ul元素中的第一个元素中的a元素 */
+.footer-bottom-contents ul :first-child a {
+    /* 清除边框 左 */
+    border-left: 0;
 
 }
