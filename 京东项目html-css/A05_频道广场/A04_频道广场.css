@@ -821,5 +821,144 @@
     /* 背景-图片大小 */
     background-size: 200px 260px;
 }
+
 /* #endregion -------秒杀区  结束始 */
-/*  */
+/* 频道广场 */
+.channel-square{
+    border-bottom: 1px solid #333;
+}
+
+/* 频道广场标题 */
+.channel-square-title {
+    height: 45px;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto 20px;
+    color: #333;
+
+}
+
+/* 频道广场右边 */
+.channel-square-left {
+    width: 580px;
+    height: 570px;
+    overflow: hidden;
+
+
+}
+
+.channel-square-left > div {
+    float: left;
+
+}
+
+
+.channel-square-left .channel-square-top {
+    width: 280px;
+    height: 370px;
+    margin: 0 10px 10px 0;
+    background-color: rgb(42, 165, 120);
+
+
+}
+
+.channel-square-left .channel-square-top{
+
+    width: 280px;
+    height: 370px;
+    margin: 0 10px 10px 0;
+    background-color: rgb(42, 165, 77);
+
+
+}
+
+.channel-square-left :nth-child(3) {
+    width: 280px;
+    height: 180px;
+    margin: 0 10px 10px 0;
+    /* background-color: rgb(71, 42, 165); */
+
+
+}
+
+.channel-square-left :nth-child(4) {
+    width: 280px;
+    height: 180px;
+    margin: 0 10px 10px 0;
+
+    /* background-color: rgb(165, 163, 42); */
+
+
+}
+
+.channel-square-left >div .subtitle {
+    margin: 10px;
+}
+
+.channel-square-left :nth-child(3) div :nth-child(1),
+.channel-square-left :nth-child(4) div :nth-child(1) {
+    padding-left: 20px;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    font-family: Microsoft YaHei;
+
+}
+
+
+
+
+
+
+
+
+/* 频道广场右边 */
+.channel-square-right {
+    width: 590px;
+    height: 570px;
+
+
+}
+
+.channel-square-right  .channel-square-right-item >:nth-child(2n-1){
+    width: 290px;
+    height: 180px;
+    /* background-color: rgb(0, 255, 76); */
+    margin: 0 10px 10px 0;
+    float: left;
+
+}
+
+.channel-square-right .channel-square-right-item > :nth-child(2n){
+    width: 290px;
+    height: 180px;
+    /* background-color: rgb(255, 0, 111); */
+    float: left;
+
+
+
+}
+
+.channel-square-right-item li .subtitle{
+    margin: 10px;
+    overflow: hidden;
+ 
+}
+
+.channel-square-right-item li .subtitle :first-child{
+    padding-left: 20px;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    font-family: Microsoft YaHei;
+ 
+}
+.channel-square-right-item li :last-child{
+    padding-left: 20px;
+   
+ 
+}
+
