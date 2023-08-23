@@ -823,59 +823,79 @@
 }
 
 /* #endregion -------秒杀区  结束始 */
+/* #region -------频道广场 开始 */
 /* 频道广场 */
-.channel-square{
+.channel-square {
+    /* 边框 下 */
     border-bottom: 1px solid #333;
 }
 
-/* 频道广场标题 */
+/* 频道广场标题--------------------------------------------------------------------------------------  */
 .channel-square-title {
+    /* 高度 */
     height: 45px;
+    /* 字体大小 */
     font-size: 28px;
+    /* 字体类型 */
     font-weight: 700;
-    text-align: center;
-    margin: 0 auto 20px;
+    /* 字体颜色 */
     color: #333;
-
+    /* 字体居中 */
+    text-align: center;
+    /* 外边距 四个值代表 上，右，下，左  注意：外边距  设置外边距最好在他的父类中设置overflow: hidden;）*/
+    margin: 0 auto 20px;
 }
 
-/* 频道广场右边 */
+/* 频道广场右边--------------------------------------------------------------------------------------  */
 .channel-square-left {
+    /* 高度 */
     width: 580px;
+    /* 字体大小 */
     height: 570px;
+    /* 处理溢出：隐藏； */
     overflow: hidden;
 
-
 }
 
-.channel-square-left > div {
+.channel-square-left>div {
+    /* 左浮动 */
     float: left;
 
 }
 
 
 .channel-square-left .channel-square-top {
+    /* 宽度 */
     width: 280px;
+    /* 高度 */
     height: 370px;
+    /* 外边距 四个值代表 上，右，下，左  注意：外边距  设置外边距最好在他的父类中设置overflow: hidden;）*/
     margin: 0 10px 10px 0;
+    /* 背景颜色 */
     background-color: rgb(42, 165, 120);
 
 
 }
 
-.channel-square-left .channel-square-top{
-
+.channel-square-left .channel-square-top {
+    /* 宽度 */
     width: 280px;
+    /* 高度 */
     height: 370px;
+    /* 外边距 四个值代表 上，右，下，左  注意：外边距  设置外边距最好在他的父类中设置overflow: hidden;）*/
     margin: 0 10px 10px 0;
+    /* 背景颜色 */
     background-color: rgb(42, 165, 77);
 
 
 }
 
 .channel-square-left :nth-child(3) {
+    /* 宽度 */
     width: 280px;
+    /* 高度 */
     height: 180px;
+    /* 外边距 四个值代表 上，右，下，左  注意：外边距  设置外边距最好在他的父类中设置overflow: hidden;）*/
     margin: 0 10px 10px 0;
     /* background-color: rgb(71, 42, 165); */
 
@@ -883,8 +903,11 @@
 }
 
 .channel-square-left :nth-child(4) {
+    /* 宽度 */
     width: 280px;
+    /* 高度 */
     height: 180px;
+    /* 外边距 四个值代表 上，右，下，左  注意：外边距  设置外边距最好在他的父类中设置overflow: hidden;）*/
     margin: 0 10px 10px 0;
 
     /* background-color: rgb(165, 163, 42); */
@@ -892,73 +915,82 @@
 
 }
 
-.channel-square-left >div .subtitle {
+.channel-square-left>div .subtitle {
+    /* 外边距 注意：外边距  设置外边距最好在他的父类中设置overflow: hidden;）*/
     margin: 10px;
 }
 
 .channel-square-left :nth-child(3) div :nth-child(1),
 .channel-square-left :nth-child(4) div :nth-child(1) {
+    /* 内边距 左 */
     padding-left: 20px;
+    /* 行高 */
     line-height: 25px;
+    /* 字体大小 */
     font-size: 18px;
+    /* 字体加粗 */
     font-weight: bold;
+    /* 字体颜色 */
     color: #333;
+    /* 字符类型 */
     font-family: Microsoft YaHei;
-
 }
 
-
-
-
-
-
-
-
-/* 频道广场右边 */
+/* 频道广场右边-------------------------------------------------------------------------------------- */
 .channel-square-right {
+    /* 宽度 */
     width: 590px;
+    /* 高度 */
     height: 570px;
-
-
 }
 
-.channel-square-right  .channel-square-right-item >:nth-child(2n-1){
+.channel-square-right .channel-square-right-item>:nth-child(2n-1) {
+     /* 宽度 */
     width: 290px;
+        /* 高度 */
     height: 180px;
     /* background-color: rgb(0, 255, 76); */
+       /* 外边距 四个值代表 上，右，下，左  注意：外边距  设置外边距最好在他的父类中设置overflow: hidden;）*/
     margin: 0 10px 10px 0;
+    /* 左浮动 */
     float: left;
-
 }
 
-.channel-square-right .channel-square-right-item > :nth-child(2n){
+.channel-square-right .channel-square-right-item> :nth-child(2n) {
+     /* 宽度 */
     width: 290px;
+     /* 高度 */
     height: 180px;
     /* background-color: rgb(255, 0, 111); */
+      /* 左浮动 */
     float: left;
-
-
-
 }
 
-.channel-square-right-item li .subtitle{
+.channel-square-right-item li .subtitle {
+/* 外边距  注意：外边距  设置外边距最好在他的父类中设置overflow: hidden;）*/
     margin: 10px;
-    overflow: hidden;
  
 }
 
-.channel-square-right-item li .subtitle :first-child{
+.channel-square-right-item li .subtitle :first-child {
+    /* 内边距 左 */
     padding-left: 20px;
+    /* 行高 */
     line-height: 25px;
+    /* 字体大小 */
     font-size: 18px;
+    /* 字体加粗 */
     font-weight: bold;
+    /* 字体颜色 */
     color: #333;
+    /* 字体类型 */
     font-family: Microsoft YaHei;
- 
-}
-.channel-square-right-item li :last-child{
-    padding-left: 20px;
-   
- 
 }
 
+.channel-square-right-item li :last-child {
+   
+    padding-left: 30px;
+}
+
+/* #endregion -------频道广场 结束 */
+/*  */
