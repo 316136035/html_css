@@ -991,7 +991,7 @@
 }
 /* 频道广场右边 全部实例的中的最后一个元素 */
 .channel-square-right-item li :last-child {
-    /* 内边框 */
+    /*  */
     padding-left: 30px;
 }
 
