@@ -4,7 +4,15 @@
 
 <head><!--规定 HTML 文档的字符编码-->
     <meta charset="UTF-8"><!-- 针对IE浏览器的一个兼容性设置-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--< Meta Name=" description（网站内容描述）" Content="网页描述文字" >  -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--优先使用 webkit ( Chromium ) 内核进行染，针对36@等壳览器-->
+    <meta name="renderer" content="webkit">
+
+    <!-- 让低版本浏览器认识H5 的义化标签 -->
+    <!--[if lt ie g]>
+           <script src="../resources静态资源/js/html5shiv.min.js"></script>
+        <![endif]-->
+    <!--< Meta Name=" description（网站内容描述）" Content="网页描述文字" >  -->
     <meta name="description" content=""><!-- Edge 模式通知 Windows Internet Explorer 以最高级别的可用模式显示内容 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 头标题 -->
     <title>A02_不常用格式化标签.</title><!-- 设置网站图标调用一个外部的图片文件 -->
@@ -22,7 +30,8 @@
     <p><!-- kbd键盘文本，表示文本是通过键盘输入的，经常用在与计算机相关的手册中 -->键盘文本: <kbd>ctrl+c</kbd></p>
     <p><!-- abbr title="*"缩写，最好配合上 title 属性（下划线，提示描述） --> <abbr title="英雄联盟">LOL</abbr></p>
     <p> 你是年少的欢喜，这句话反序： <!-- bdo更改文本方向 要配合 dir 属性，可选值: tr (默认值) 、 rt1 --><bdo dir="rtl">你是年少的欢喜</bdo><br> 你是年少的欢喜，这句话正序：
-        <!-- bdo更改文本方向 要配合 dir 属性，可选值: tr (默认值) 、 rt1 --><bdo dir="ltr">你是年少的欢喜</bdo></p>
+        <!-- bdo更改文本方向 要配合 dir 属性，可选值: tr (默认值) 、 rt1 --><bdo dir="ltr">你是年少的欢喜</bdo>
+    </p>
     <p><!-- var标记为变量 应与 code 标签一起使用 --><code>let<var>a</var>=1</code></p>
     <p><!-- small附属细则，例如: 包括版权、法律文本。-- 很少使用 --><small>经营证照|(京)网械平台备字(2018)第00003号|营业执照</small></p>
     <p><!-- b摘要中的关键字、评论中的产品名称。 --><b>富安娜枕头很舒服，看评论有异味，我使用是没有味道</b></p>
