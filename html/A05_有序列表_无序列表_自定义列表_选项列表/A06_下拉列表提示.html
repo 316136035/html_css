@@ -14,29 +14,27 @@
     <!--< Meta Name=" description（网站内容描述）" Content="网页描述文字" >  -->
     <meta name="description" content=""><!-- Edge 模式通知 Windows Internet Explorer 以最高级别的可用模式显示内容 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 头标题 -->
-    <title>A05_选项列表</title><!-- 设置网站图标调用一个外部的图片文件 -->
+    <titleA06_下拉列表提示</title><!-- 设置网站图标调用一个外部的图片文件 -->
     <link rel="shortcut icon" href="../../resource资源文件/img/favicon.ico" type="image/x-icon" /><!-- 调用一个外部的CSS样式文件 -->
     <link rel="stylesheet" href="#">
 </head>
 
 <body>
     <div>
-        <!--form表单  action="请求地址"    method="请求方式" target="页签打开方式"-->
-        <form action="#" method="get">
-            <!--输入框 type="文本类型" list="datalist" 关联datalist选项列表 查找选项中的关键字 作为提示-->
-            <input type="text" list="datalist">
-            <!-- 普通按钮 -->
-            <button>搜索</button>
-            <!-- 选项列表 -->
-            <datalist id="datalist">
-                <!--选项  通过js请求服务器返回的 -->
-                <option value="周文斌">周文斌 </option>
-                <option value="周伟彬">周伟彬</option>
-                <option value="和文彬">和文彬</option>
-                <option value="苏伟元">苏伟元</option>
-            </datalist>
-            <hr>
-        </form>
+        <!--details下拉列表提示  要配合summary 一起使用  -->
+        <details>
+            <summary>从一人风后奇门开始</summary>
+            <p>身怀三十六天罡法、七十二地煞术如此无上传承！</p>
+        </details>
+        <details>
+            <summary>从一人风后奇门开始</summary>
+            <p>
+                顾惟清意外来到一人之下世界，开局继承包含了诸天万界一切奇门之术的《六甲奇门》，从而一眼便参悟了《风后奇门》。</p>
+        </details>
+        <details>
+            <summary>从一人风后奇门开始</summary>
+            <p>在一人之下世界... 他是金凤婆婆的“幕中之宾”、是连阮丰都为之折服的幕后黑手、是连“上面”都最为重视的天纵英才！更是能与老天师驾并齐驱的三一门门长！</p>
+        </details>
 
 
 
