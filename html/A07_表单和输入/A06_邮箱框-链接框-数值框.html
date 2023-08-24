@@ -1,0 +1,61 @@
+<!DOCTYPE html> <!-- 文档声明 html-5 -->
+<html lang="zh-CN"> <!-- 设置页面语言  中文简体 -->
+<!-- 表头 -->
+
+<head><!--规定 HTML 文档的字符编码-->
+    <meta charset="UTF-8"><!-- 针对IE浏览器的一个兼容性设置-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--< Meta Name=" description（网站内容描述）" Content="网页描述文字" >  -->
+    <meta name="description" content=""><!-- Edge 模式通知 Windows Internet Explorer 以最高级别的可用模式显示内容 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 头标题 -->
+    <title>A01_表单_文本框-密码框</title><!-- 设置网站图标调用一个外部的图片文件 -->
+    <link rel="shortcut icon" href="../../resource资源文件/img/favicon.ico" type="image/x-icon" /><!-- 调用一个外部的CSS样式文件 -->
+    <link rel="stylesheet" href="#">
+</head>
+
+<body>
+    <div> <!--form表单  action="请求地址"    method="请求方式" target="页签打开方式"-->
+        <form action="https:search.jd.com/Search?" method="get" target="_blank">
+
+            <!--输入框" 
+                    name="服务器取值用key" 
+                    id="用着js"  
+                    value="默认值" 
+                    placeholder="占位符-提示值" （作用于文本输入类的）
+                    maxlength="限制字符最大值" 
+                    disabled="disabled" 属性规定禁用不能输入
+                    placeholder="提示值"
+                    autofocus 页面加载自动获取焦点
+                    required 必填项  （作用于文本输入框 单选框 多选框 多行文本）没有填会限制提交表单
+                    autocomplete （作用于type="text"）历史记录开启on/关闭off
+                    pattern="正则表达式"  （作用于文本输入类的）手机正则表达式:"^1[3456789]\d{9}$"
+            -->
+            <!-- 邮箱标签 限制输入非邮箱格式 -->
+            <table for="email">邮箱:</table>
+            <input type="email" id="email" name="email" required> <br>
+
+            <!--链接标签 限制输入非链接格式 -->
+            <table for="url">链接:</table>
+            <input type="url" id="url" name="url" required> <br>
+
+            <!--数值输入/选择标签 限制输入非-数值格式
+            step="每次点击+N/-N"  
+            max 最大值
+            min 最小值
+             -->
+            <table for="number">数值:</table>
+            <input type="number" id="number" name="number" step="3" max="100" min="0"> <br>
+
+
+
+
+
+            <!--提交按钮2-->
+            <input type="submit" value="提交按钮2">
+        </form>
+
+
+
+    </div>
+</body>
+
+</html>
