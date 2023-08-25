@@ -43,22 +43,6 @@
             <!-- 电话框（作用于手机端） -->
             <table for="phone">电话：</table>
             <input type="tel" name="phone" id="phone"><br>
-            <!-- 滑动条 -->
-            <table for="range">滑动条：</table>
-            <input type="range" name="range" id="range" max="100" min="0" value="22"><br>
-
-            <!-- 颜色选择器 -->
-            <table for="color">颜色选择器：</table>
-            <input type="color" name="" id="color"> <br>
-
-
-
-
-
-
-
-
-
             <!--提交按钮2-->
             <input type="submit" value="提交按钮2">
         </form>
