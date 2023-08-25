@@ -36,15 +36,15 @@
                     autocomplete （作用于type="text"）历史记录开启on/关闭off
                     pattern="正则表达式"  （作用于文本输入类的）手机正则表达式:"^1[3456789]\d{9}$"
             -->
-            <!-- 邮箱标签 限制输入非邮箱格式 -->
+            <!-- 邮箱框 限制输入非邮箱格式 -->
             <table for="email">邮箱:</table>
             <input type="email" id="email" name="email" required> <br>
 
-            <!--链接标签 限制输入非链接格式 -->
+            <!--链接框 限制输入非链接格式 -->
             <table for="url">链接:</table>
             <input type="url" id="url" name="url" required> <br>
 
-            <!--数值输入/选择标签 限制输入非-数值格式
+            <!--数值框 输入/选择标签 限制输入非-数值格式
             step="每次点击+N/-N"  
             max 最大值
             min 最小值
@@ -52,8 +52,25 @@
             <table for="number">数值:</table>
             <input type="number" id="number" name="number" step="3" max="100" min="0"> <br>
 
+            <!-- 搜索框（语义化） -->
+            <table for="search">搜索：</table>
+            <input type="search" name="search" id="search"> <br>
 
-      
+            <!-- 电话框（作用于手机端） -->
+            <table for="phone">电话：</table>
+            <input type="tel" name="phone" id="phone"><br>
+            <!-- 滑动条 -->
+            <table for="range">滑动条：</table>
+            <input type="range" name="range" id="range" max="100" min="0" value="22"><br>
+
+            <!-- 颜色选择器 -->
+            <table for="color">颜色选择器：</table>
+            <input type="color" name="" id="color"> <br>
+
+
+
+
+
 
 
 
