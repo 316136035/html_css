@@ -39,7 +39,9 @@
 
             <!-- 滑动条 -->
             <table for="range">滑动条：</table>
-            <input type="range" name="range" id="range" max="100" min="0" value="22"><br>
+            <input type="range" name="range" id="range" max="100" min="0" value="22">
+            <div id="progress"></div>
+            <br>
 
             <!-- 颜色选择器 -->
             <table for="color">颜色选择器：</table>
@@ -49,6 +51,20 @@
         </form>
 
 
+        <script>
+            // 通过id获取元素对象
+            const slider = document.getElementById('range');
+              // 通过id获取元素对象
+            const progressDiv = document.getElementById('progress');
+            // 给元素对象添加监听事件
+            slider.addEventListener('input', function () {
+                // 获取滑动条value值
+                const value = slider.value;
+                // 设置value值
+                progressDiv.textContent = value;
+            });
+
+        </script>
 
     </div>
 </body>
