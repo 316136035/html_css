@@ -11,46 +11,32 @@
     <!-- Edge 模式通知 Windows Internet Explorer 以最高级别的可用模式显示内容   兼用性-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 头标题 -->
-    <title>A08_盒子模型外边距合并注意事项_marign</title>
+    <title>A09_盒子模型_扩张_固定总大小</title>
     <!-- 设置网站图标调用一个外部的图片文件 -->
     <link rel="shortcut icon" href="../../resource资源文件/img/favicon.ico" type="image/x-icon" />
     <!-- 调用一个外部的CSS样式文件 -->
     <link rel="stylesheet" href="#">
     <!--内部样式（css选择器使用内部样式显示）-->
-    <style>
-        .A {
+    <style> 
+        .content-box{
             width: 200px;
             height: 200px;
-            background-color: chartreuse;
-            /*相邻的外边距设置下方和上面（其中的一个会不生效，取最大值，只会存在bottom-->top）-->  */
-            margin-bottom: 50px;
+            padding: 10px;
+            border: 5px  solid brown;
+            margin: 20px;
+            /* content-box盒子模型内容区大小（内边距+边框）会自动向外扩张 */
+            box-sizing: content-box;
+      
         }
-
-        .B {
+       
+        .border-box{
             width: 200px;
             height: 200px;
-            background-color: rgb(255, 0, 38);
-            /*相邻的外边距设置下方和上面（其中的一个会不生效，取最大值,只会存在bottom-->top）-->  */
-            margin-top: 50px;
-        }
-
-        .inline>div {
-            width: 100px;
-            height: 100px;
-            /* 设置为行内块元素显示模式.水平方位排序 */
-            display: inline-block;
-        }
-
-        .C {
-            /* 相邻的外边距设置右会和左的合并显示 */
-            background-color: rgb(255, 238, 0);
-            margin-right: 50px;
-        }
-
-        .D {
-            background-color: rgb(111, 0, 255);
-            /* 相邻的外边距设置左会和右的合并显示 */
-            margin-left: 50px;
+            padding: 10px;
+            border: 5px  solid brown;
+            margin: 10px;
+            /* border-box盒子模型内容区+内边距+边框_会固定总大小 */
+            box-sizing: border-box;
         }
     </style>
 
@@ -59,16 +45,11 @@
 <body>
 
     <div>
-        <div class="A">A</div>
-        <div class="B">B</div>
+        <div class="content-box">content-box盒子模型内容区大小（内边距+边框）会自动向外扩大 </div>
+        <div class="border-box">border-box盒子模型内容区+内边距+边框_会固定总大小 </div>
 
     </div>
-    <hr>
-    <div class="inline">
-        <div class="C">C</div>
-        <div class="D">D</div>
-
-    </div>
+  
 
     <script type="text/javascript" src="#">  /*javascript代码  */</script>
 
