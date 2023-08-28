@@ -11,32 +11,35 @@
     <!-- Edge 模式通知 Windows Internet Explorer 以最高级别的可用模式显示内容   兼用性-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 头标题 -->
-    <title>A09_盒子模型_扩张_固定总大小</title>
+    <title>A10_盒子模型resize调整页面大小</title>
     <!-- 设置网站图标调用一个外部的图片文件 -->
     <link rel="shortcut icon" href="../../resource资源文件/img/favicon.ico" type="image/x-icon" />
     <!-- 调用一个外部的CSS样式文件 -->
     <link rel="stylesheet" href="#">
     <!--内部样式（css选择器使用内部样式显示）-->
-    <style> 
-        .content-box{
-            width: 200px;
+    <style>
+        .resize {
+            /* 宽度 */
+            width: 200px; 
+            /* 高度 */
             height: 200px;
+            /* 内边距 */
             padding: 10px;
-            border: 5px  solid brown;
-            margin: 20px;
-            /* content-box盒子模型内容区大小（内边距+边框）会自动向外扩张  标准模型*/
-            box-sizing: content-box;
-      
-        }
-       
-        .border-box{
-            width: 200px;
-            height: 200px;
-            padding: 10px;
-            border: 5px  solid brown;
+            /* 边框 */
+            border: 5px solid brown;
+            /* 外边距 */
             margin: 10px;
-            /* border-box盒子模型内容区+内边距+边框_会固定总大小 */
-            box-sizing: border-box;
+            /* 背景颜色 */
+            background-color: chartreuse;
+            /* 使用resize：调整页面大小 必须添加overflow: hidden 溢出：隐藏；; 
+            resize: both;   水平+垂直可调整
+            resize: horizontal;  水平可调整
+            resize: vertical; 垂直可调整
+            resize: none; 不能调整 默认 */
+            resize: both;
+            /* 溢出：隐藏； */
+            overflow: hidden;
+
         }
     </style>
 
@@ -44,12 +47,12 @@
 
 <body>
 
-    <div>
-        <div class="content-box">content-box盒子模型内容区大小（内边距+边框）会自动向外扩大 </div>
-        <div class="border-box">border-box盒子模型内容区+内边距+边框_会固定总大小 </div>
+    <div class="father">
+        <div class="resize"> </div>
+
 
     </div>
-  
+
 
     <script type="text/javascript" src="#">  /*javascript代码  */</script>
 
