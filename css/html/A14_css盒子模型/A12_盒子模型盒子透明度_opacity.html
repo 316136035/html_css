@@ -1,6 +1,7 @@
 <!DOCTYPE html> <!-- 文档声明 html-5 -->
 <html lang="zh-CN"> <!-- 设置页面语言  中文简体 -->
 <!-- 表头 -->
+
 <head><!--规定 HTML 文档的字符编码  兼用性-->
     <meta charset="UTF-8">
     <!-- 针对IE浏览器的一个兼容性设置-->
@@ -17,7 +18,7 @@
     <link rel="stylesheet" href="#">
     <!--内部样式（css选择器使用内部样式显示）-->
     <style>
-        .box {
+        .box1 {
             width: 200px;
             height: 200px;
             background-color: blue;
@@ -25,19 +26,43 @@
             margin: 0 auto;
             /* 外边距 */
             margin-top: 50px;
+            /*盒子模型透明度设置 （0---1）  */
             opacity: 0.5;
 
         }
 
+        .box2 {
+            /* 宽度 */
+            width: 591px;
+            /* 开启相对定位 */
+            position: relative;
+        }
 
-       
+        h1 {
+            /* 开启绝对定位（父类要开启相对定位） */
+            position: absolute;
+            /* 绝对定位 右75px */
+            right: 75px;
+            /*绝对定位 上 0 */
+            top: 0;
+            background-color: black;
+            color: rgb(231, 5, 5);
+            /* 文字居中 */
+            text-align: right;
+            /*盒子模型透明度设置 （0---1）  */
+            opacity:0.5;
+        }
     </style>
 
 </head>
 
 <body>
-    <div class="box"> </div>
- 
+    <div class="box1"> </div>
+    <div class="box2">
+        <img src="../resources静态资源/img/视频封面.png" alt="">
+        <h1>淘神价VIP</h1>
+    </div>
+
 
     <!-- <script type="text/javascript" src="#">  /*javascript代码  */</script> -->
 
