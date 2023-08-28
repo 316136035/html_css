@@ -22,9 +22,9 @@
             /* 设置背景颜色 */
             background-color: aqua;
             /*设置内容区宽度 */
-            width:100px;
+            width: 100px;
             /*设置内容区高度 */
-            height:100px;
+            height: 100px;
             /*设置上方内边距 */
             padding-top: 10px;
             /*设置下方内边距 */
@@ -33,16 +33,19 @@
             padding-left: 30px;
             /*设置右方内边距 */
             padding-right: 40px;
+            /* 固定内容区大小content-box   默认的 */
+            box-sizing: content-box;
+
 
         }
 
         .div2 {
-             /* 设置背景颜色 */
+            /* 设置背景颜色 */
             background-color: rgb(145, 255, 0);
             /*设置内容区宽度 */
             width: 100px;
             /*设置内容区高度 */
-            height:100px;
+            height: 100px;
             /* 内边距 组合写法 */
             /* 一个值代表 四个方向内边距一样 */
             padding: 40px;
@@ -50,30 +53,32 @@
             padding: 40px 80px;
             /* 三个值代表 上，左右一样，下 */
             padding: 40px 80px 100px;
-             /* 四个值代表 上，右，下，左 */
-             padding: 80px 60px 40px 40px;
+            /* 四个值代表 上，右，下，左 */
+            padding: 80px 60px 40px 40px;
 
         }
-     span{
-          /* 设置背景颜色 */
-          background-color: rgb(255, 0, 128);
-            /*设置内容区宽度 */
-            width: 50px;
-            /*设置内容区高度 */
-            height:50px;
-             /* 四个值代表 上，右，下，左 */
-             padding: 20px 60px 40px 40px;
-     }
-     img{
+
+        span {
             /* 设置背景颜色 */
             background-color: rgb(255, 0, 128);
             /*设置内容区宽度 */
             width: 50px;
             /*设置内容区高度 */
-            height:50px;
-             /* 四个值代表 上，右，下，左 */
-             padding: 20px 60px 40px 40px;
-     }
+            height: 50px;
+            /* 四个值代表 上，右，下，左 */
+            padding: 20px 60px 40px 40px;
+        }
+
+        img {
+            /* 设置背景颜色 */
+            background-color: rgb(255, 0, 128);
+            /*设置内容区宽度 */
+            width: 50px;
+            /*设置内容区高度 */
+            height: 50px;
+            /* 四个值代表 上，右，下，左 */
+            padding: 20px 60px 40px 40px;
+        }
     </style>
 
 </head>
@@ -90,7 +95,7 @@
     <br>
     <hr>
     <img src="../../../resource资源文件/img/A01_图标标签.jpg" alt="行内元素可以使用内边距">
-    
+
 
 
 
