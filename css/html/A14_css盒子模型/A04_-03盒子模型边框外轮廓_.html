@@ -11,66 +11,63 @@
     <!-- Edge 模式通知 Windows Internet Explorer 以最高级别的可用模式显示内容   兼用性-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 头标题 -->
-    <title>A04_-02盒子模型边框圆角html</title>
+    <title>A04_-03盒子模型边框外轮廓_</title>
     <!-- 设置网站图标调用一个外部的图片文件 -->
     <link rel="shortcut icon" href="../resources静态资源/img/favicon.ico" type="image/x-icon" />
     <!-- 调用一个外部的CSS样式文件 -->
     <link rel="stylesheet" href="#">
     <!--内部样式（css选择器使用内部样式显示）-->
     <style>
-        .radius {
-            width: 200px;
-            height: 200px;
-            background-color: chartreuse;
-            border: 1px solid red;
-            font-size: 12px;
-            text-align: center;
-            line-height: 200px;
+        .outline1 {
+            width: 400px;
+            height: 400px;
 
-
+            padding: 50px;
+            margin: 0 auto;
+            margin-top: 100px;
+            background-color: aqua;
+            border: 50px solid red;
+            /* 外轮廓（不计算盒子大小，不占站
+            必须全写上
+            outline-width:  50px;
+            outline-color: chartreuse;
+            outline-style: solid;
+            outline-offset: 20px ;
+            ）*/
+            /* 外轮廓大小 */
+            outline-width: 50px;
+            /* 外轮廓颜色 */
+            outline-color: chartreuse;
+            outline-style: solid;
+            /* 偏移量 可以控制外轮廓 大小 */
+            outline-offset: 20px;
         }
 
-        .radius1 {
-            /* 圆角 4个方位一样 */
-            border-radius: 10px;
+        .father {
+            /* 开启相对定位 */
+            position: relative;
         }
 
-        .radius2 {
-            /* 圆角等于边框大小/2就是圆  */
-            border-radius: 100px;
-        }
+        /* 外轮廓复合写法 */
+        .outline2 {
+            /* 开启相对定位（父类要开启定位） */
+            position: relative;
+            /* 相对定位上 */
+            top: 100px;
+            /* 外轮廓复合写法 像素 实线 颜色 */
+            outline: 20px solid orange;
 
-        .radius3 {
-            /* 圆角分别： 左上 */
-            border-top-left-radius: 10px;
-            /* 圆角分别：  右上 */
-            border-top-right-radius: 20px;
-            /* 圆角分别： 右下 */
-            border-bottom-right-radius: 40px;
-            /* 圆角分别： 左下 */
-            border-bottom-left-radius: 60px;
-
-
-        }
-
-        /* 边框4角符合写法 */
-        .radius4 {
-            /* 圆角分别： 左上 右上 右下 左下 */
-            border-radius: 20px 40px 60px 80px;
         }
     </style>
+
 
 </head>
 
 <body>
-    <div class="radius radius1">border-radius: 10px;</div>
-
-
-
-
-
-
-
+    <div class="father">
+        <div class="outline1">盒子模型边框外轮廓_</div>
+        <div class="outline2">盒子模型边框外轮廓_</div>
+    </div>
     <!-- <script type="text/javascript" src="#">    /*javascript代码  */</script> -->
 
 </body>
