@@ -18,15 +18,15 @@
     <!-- Edge 模式通知 Windows Internet Explorer 以最高级别的可用模式显示内容   兼用性-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 头标题 -->
-    <title>A01_2D变换_位移</title>
+    <title>A04_2D变换_扭曲_skew</title>
     <!-- 设置网站图标调用一个外部的图片文件 -->
     <link rel="shortcut icon" href="../resources静态资源/img/favicon.ico" type="image/x-icon" />
     <!-- 调用一个外部的CSS样式文件 -->
     <link rel="stylesheet" href="#">
     <style>
         .img {
-            width: 200px;
-            height: 200px;
+            width: 400px;
+            height: 400px;
             /* 引入背景图 */
             background-image: url("../resources静态资源/img/三维视图.png");
             /* 已宽度/高度的最小值等比例缩放 （最优方案 ）*/
@@ -34,24 +34,32 @@
         }
 
         .outer {
+            /* 宽度 */
             width: 200px;
+            /* 高度 */
             height: 200px;
+            /* 边框 */
             border: 1px solid rgb(219, 8, 8);
+            /* 居中 */
             margin: 0 auto;
+            /* 外边距 上 */
             margin-top: 50px;
+            /* 背景颜色 */
             background-color: rgb(9, 216, 2);
+
         }
 
-        .inner {
+        .inner1 {
             width: 200px;
             height: 200px;
             border: 1px solid rgb(5, 5, 238);
             background-color: rgb(85, 13, 152);
-            /* 2D变换_位移 父类不要有参数  */
-            /* transform: translateX(-20px) translateY(50px); */
-            /* 2D变换_位移 父类不要有参数  百分比是按照自身的参数来计算位移 */
-            transform: translateX(50%) translateY(50%);
+            /* A03_2D变换_Z轴旋转_rotate  deg角度  对行内元素没有效果*/
+            /* transform: skewX(20deg) skewY(20deg) */
+            transform: skew(20deg,20deg);
         }
+
+    
     </style>
 
 </head>
@@ -59,8 +67,12 @@
 <body>
     <div class="img"></div>
     <div class="outer">
-        <div class="inner">inner内面</div>
- </div>
+        <div class="inner1">inner内面</div>
+    </div>
+
+    <div class="outer">
+        <div class="inner2">inner内面</div>
+    </div>
 
 
 
