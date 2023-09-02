@@ -18,7 +18,7 @@
     <!-- Edge 模式通知 Windows Internet Explorer 以最高级别的可用模式显示内容   兼用性-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 头标题 -->
-    <title>A04_3D变换_XY轴旋转_rotate </title>
+    <title>A06_3D变换_复合写法 </title>
     <!-- 设置网站图标调用一个外部的图片文件 -->
     <link rel="shortcut icon" href="../resources静态资源/img/favicon.ico" type="image/x-icon" />
     <!-- 调用一个外部的CSS样式文件 -->
@@ -51,7 +51,7 @@
             /* 设置景深 近大远小  之前要开启3D 空间*/
             perspective: 500px;
             /* 设置视图位置 */
-            perspective-origin: 101px 101px;
+            perspective-origin:101px 101px;
         }
 
         .inner1 {
@@ -63,12 +63,12 @@
             border: 1px solid rgb(5, 5, 238);
              /* 背景颜色 */
             background-color: rgba(85, 13, 152, 0.19);
-            /* 3D变换_X_Y轴旋转 deg中心的角度  对行内元素没有效果*/
-            /* transform: rotateX(45deg) rotateY(45deg); */
-            /* 3D变换_X_Y_Z轴旋转 deg中心的角度  对行内元素没有效果
-             (1代表使用，0代表不使用 最后一个参数是旋转 角度)*/
-            transform: rotate3d(1,0,0,45deg);
-
+              /* 缩放的单位为自身的景深倍数 对行内元素没有效果  对文字有影响   rotateY旋转 */
+            transform: scaleZ(1.5)  rotateY(45deg) ;
+            /* X轴 Y轴 Z轴（景深） */
+            transform: scale3d(1.5,1.5,2) rotateY(45deg);
+        
+           
 }
 
     </style>
