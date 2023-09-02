@@ -18,7 +18,7 @@
     <!-- Edge 模式通知 Windows Internet Explorer 以最高级别的可用模式显示内容   兼用性-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 头标题 -->
-    <title>A01_2D变换_位移</title>
+    <title>A05_2D变换_原点transform-origin</title>
     <!-- 设置网站图标调用一个外部的图片文件 -->
     <link rel="shortcut icon" href="../resources静态资源/img/favicon.ico" type="image/x-icon" />
     <!-- 调用一个外部的CSS样式文件 -->
@@ -48,15 +48,41 @@
             background-color: rgb(9, 216, 2);
         }
 
-        .inner {
+        .inner1 {
+            /* 宽度 */
             width: 200px;
+            /* 高度 */
             height: 200px;
+            /* 边框 */
             border: 1px solid rgb(5, 5, 238);
+            /* 背景颜色 */
             background-color: rgb(85, 13, 152);
-            transform-origin: left top;
+            /* 相对于自身的方位作为原点
+            修改变换原点对位移没有影响，对旋转和缩放会产生影响 */
+            /* transform-origin: left top; */
+            /* transform-origin: right top; */
+            /* transform-origin: left bottom; */
+            transform-origin: right bottom;
+            /*旋转角度 */
             transform: rotate(20deg);
+        }
 
-
+        .inner2 {
+            /* 宽度 */
+            width: 200px;
+            /* 高度 */
+            height: 200px;
+            /* 边框 */
+            border: 1px solid rgb(5, 5, 238);
+            /* 背景颜色 */
+            background-color: rgb(85, 13, 152);
+            /* 相对于自身的x Y方位作为原点  也可以相对于自身的百分比
+            修改变换原点对位移没有影响，对旋转和缩放会产生影响
+            */
+            transform-origin: 100px 100px;
+            /* transform-origin: 50% 50%; */
+            /*旋转角度 */
+            transform: rotate(20deg);
         }
     </style>
 
@@ -65,8 +91,12 @@
 <body>
     <div class="img"></div>
     <div class="outer">
-        <div class="inner">inner内面</div>
+        <div class="inner1">inner内面1</div>
     </div>
+    <div class="outer">
+        <div class="inner2">inner内面2</div>
+    </div>
+
 
 
 
