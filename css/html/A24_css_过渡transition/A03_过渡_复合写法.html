@@ -20,76 +20,45 @@
     <!-- Edge 模式通知 Windows Internet Explorer 以最高级别的可用模式显示内容   兼用性-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 头标题 -->
-    <title>A02_过渡_高级使用</title>
+    <title>A03_过渡_复合写法</title>
     <!-- 设置网站图标调用一个外部的图片文件 -->
     <link rel="shortcut icon" href="../resources静态资源/img/favicon.ico" type="image/x-icon" />
     <!-- 调用一个外部的CSS样式文件 -->
     <link rel="stylesheet" href="#">
     <style>
-         .box{
-            width: 200px;
-            height: 20px;
-            margin-top: 5px;
-            border: 1px solid red;
-         }
-         .box:hover .box{
-            transition-property: all;
-            transition-duration: 5s;
+        .father {
+            /* 宽度 */
             width: 1190px;
-         }
-       
-         .box1{
-            background-color: aqua;
-        
+            /* 高度 */
+            height: 40px;
+            /* 边框 */
+            border: 1px solid black;
 
-         }
-         .box2{
-            background-color: rgb(0, 255, 102);
         }
-        .box3{
-            background-color: rgb(255, 136, 0);
+
+        .box1 {
+            /* 宽度 */
+            width: 200px;
+            /* 高度 */
+            height: 40px;
+            /* 边框 */
+            background-color: red;
+            /*过渡_复合写法： 要过渡的属性 过渡持续时间   过渡方式 */
+            transition: all ease 3s;
+
         }
-        .box4{
-            background-color: rgb(255, 0, 60);
+
+        .father:hover .box1 {
+            /* 宽度 */
+            width: 1190px;
         }
-        .box5{
-            background-color: rgb(93, 0, 255);
-        }
-        .box6{
-            background-color: rgb(0, 4, 255);
-            
-        }
-        .box7{
-            background-color: rgb(183, 255, 0);
-            
-        }
-        .box8{
-            background-color: rgb(0, 255, 166);
-            
-        }
-        .box9{
-            background-color: rgb(115, 0, 255);
-            
-        }
-        .box10{
-            background-color: rgb(255, 0, 191);
-        }
-     
     </style>
 </head>
 
 <body>
     <div class="father">
-        <div class="box box1">div1</div>
-        <div class="box box2">div2</div>
-        <div class="box box3">div3</div>
-        <div class="box box4">div4</div>
-        <div class="box box5">div5</div>
-        <div class="box box6">div6</div>
-        <div class="box box7">div7</div>
-        <div class="box box8">div8</div>
-        <div class="box box9">div9</div>
-        <div class="box box10">div10</div>
+        <div class="box box1">过渡_复合写法 </div>
+
     </div>
 
 
