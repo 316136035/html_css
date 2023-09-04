@@ -20,24 +20,50 @@
     <!-- Edge 模式通知 Windows Internet Explorer 以最高级别的可用模式显示内容   兼用性-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 头标题 -->
-    <title>A01_动画简单写法</title>
+    <title>A05_动画和过渡的区别</title>
     <!-- 设置网站图标调用一个外部的图片文件 -->
     <link rel="shortcut icon" href="../resources静态资源/img/favicon.ico" type="image/x-icon" />
     <!-- 调用一个外部的CSS样式文件 -->
     <link rel="stylesheet" href="#">
     <style>
         .outer {
-            width: 1000px;
-            height: 100px;
+            width: 1090px;
+            height: 148px;
+            /* 边框 */
             border: 1px solid black;
         }
+
+        .inner {
+            width: 100px;
+            height: 50px;
+            background-color: chartreuse;
+            border: 2px solid black;
+            margin-top: 20px;
+
+        }
+
+        .inner1 {
+
+            background-color: rgb(93, 0, 255);
+
+
+        }
+
+        .inner1:hover {
+            /*  一般写在非事件对象中  过渡需要有事件触发*/
+            transform: translateX(988px);
+
+        }
+
         /*定义动画 （动画名字）*/
-        @keyframes identifier {
+        @keyframes Animation-name {
+
             /* 动画开始的第一帧 */
             from {
                 transform: translateX(0);
                 background-color: black;
             }
+
             /* 动画结束的最后一帧 */
             to {
                 transform: translateX(900px);
@@ -45,26 +71,26 @@
             }
         }
 
-        .inner {
-            width: 100px;
-            height: 100px;
-            background-color: aquamarine;
-            /* 应用动画 */
-            animation-name: identifier;
-            /* 动画持续时间 */
-            animation-duration: 5s;
-            /* 动画延迟时间 */
-            animation-delay: 1s;
-        }
 
-     
+
+
+        .inner2 {
+            /* 动画不需要有事件触发
+            动画持续时间,快/慢,延迟时间, 播放次数,方向,开启动画,动画名字*/
+            animation: 3s linear 1s infinite alternate forwards Animation-name;
+            background-color: rgb(93, 0, 255);
+
+
+        }
     </style>
 </head>
 
 <body>
 
     <div class="outer">
-        <div class="inner"></div>
+        <div class="inner inner1">过渡</div>
+        <div class="inner inner2">动画</div>
+
     </div>
     <!-- 引入三方依赖包 -->
     <!-- <script type="text/javascript" src="#">    /*javascript代码  */</script> -->
