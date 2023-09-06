@@ -26,9 +26,9 @@
     <!-- 调用一个外部的CSS样式文件 -->
     <link rel="stylesheet" href="#">
     <style>
-            .inner1 ,.inner2{
-            width: 200px;
-            height:200px;
+        .inner {
+            width: 100px;
+            height: 100px;
             background-color: chartreuse;
             /* 边框 */
             border: 1px solid red;
@@ -36,9 +36,10 @@
             box-sizing: border-box;
 
         }
-        .outer1 {
+
+        .outer {
             width: 1000px;
-            height: 600px;
+
             background-color: dimgrey;
             /* 居中 */
             margin: 0 auto;
@@ -56,34 +57,109 @@
             wrap-reverse 反向换行（注意：要使用对齐方式）
             */
             /* 复合写法:主轴方向-换行方式 */
-            flex-flow: row wrap ;
-
-            justify-content:
-
-           
+            flex-flow: row wrap;
 
 
         }
-        
 
+        .outer1 {
+            /* 主轴的起点位置排序-左对其 （默认主轴的方向不变*）*/
+            justify-content: flex-start;
 
-    
-        
+        }
+
+        .outer2 {
+            /* 主轴的结束位置排序-右对其 （主轴的方向不变）*/
+            justify-content: flex-end;
+
+        }
+
+        .outer3 {
+            /* 主轴的中间位置对象 （主轴的方向不变）*/
+            justify-content: center;
+
+        }
+
+        .outer4 {
+            /* 主轴的靠左 中 靠右 （主轴的方向不变）*/
+            justify-content: space-between;
+
+        }
+
+        .outer5 {
+            /* 主轴的 空左→空*2 →中→空*2→右空 （主轴的方向不变）*/
+            justify-content: space-around;
+            ;
+
+        }
+        .outer6 {
+            /* 主轴的 均匀排列每个元素 每个元素之间的间隔相等 （主轴的方向不变）*/
+            justify-content: space-evenly;
+           
+
+        }
     </style>
 </head>
 
 <body>
 
     <!-- 伸缩容器  -->
-    <div class="outer1">
+    <div class="outer outer1">
         <!-- 伸缩项目 -->
-        <div class="inner1">inner1</div>
-        <div class="inner1">inner2</div>
-        <div class="inner1">inner3</div>
-        
+        <div class="inner">flex-start</div>
+        <div class="inner">flex-start</div>
+        <div class="inner">flex-start</div>
+
     </div>
     <hr>
-  
+
+    <!-- 伸缩容器  -->
+    <div class="outer outer2">
+        <!-- 伸缩项目 -->
+        <div class="inner">lex-end</div>
+        <div class="inner">lex-end</div>
+        <div class="inner">lex-end</div>
+
+    </div>
+    <hr>
+    <!-- 伸缩容器  -->
+    <div class="outer outer3">
+        <!-- 伸缩项目 -->
+        <div class="inner">center</div>
+        <div class="inner">center</div>
+        <div class="inner">center</div>
+
+    </div>
+    <hr>
+    <!-- 伸缩容器  -->
+    <div class="outer outer4">
+        <!-- 伸缩项目 -->
+        <div class="inner">space-betwee</div>
+        <div class="inner">space-betwee</div>
+        <div class="inner">space-betwee</div>
+
+    </div>
+    <hr>
+    <!-- 伸缩容器  -->
+    <div class="outer outer5">
+        <!-- 伸缩项目 -->
+        <div class="inner">space-around</div>
+        <div class="inner">space-around</div>
+        <div class="inner">space-around</div>
+
+    </div>
+    <hr>
+        <!-- 伸缩容器  -->
+        <div class="outer outer6">
+            <!-- 伸缩项目 -->
+            <div class="inner">space-evenly</div>
+            <div class="inner">space-evenly</div>
+            <div class="inner">space-evenly</div>
+    
+        </div>
+        <hr>
+
+
 
 
 
