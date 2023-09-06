@@ -26,9 +26,10 @@
     <!-- 调用一个外部的CSS样式文件 -->
     <link rel="stylesheet" href="#">
     <style>
-            .inner1 ,.inner2{
+        .inner1,
+        .inner2 {
             width: 200px;
-            height:200px;
+            height: 200px;
             background-color: chartreuse;
             /* 边框 */
             border: 1px solid red;
@@ -36,6 +37,7 @@
             box-sizing: border-box;
 
         }
+
         .outer1 {
             width: 1000px;
             height: 600px;
@@ -49,25 +51,22 @@
             display: flex;
             /* 主轴的方向：
              row  水平正常方向 左→右 （默认）
-             *row-reverse 水平反转 右→左  */
-       
-            
+             row-reverse 水平反转 右→左 
+             column 垂直正常方向 上→下 
+             column-reverse 垂直正常方向 下→上*/
+
+
             /* 换行方式 
             nowrap 不换行（默认）
             wrap 换行（注意：要使用对齐方式）
             wrap-reverse 反向换行（注意：要使用对齐方式）
             */
             /* 复合写法:主轴方向-换行方式 */
-            flex-flow: row wrap ;
-           
+            flex-flow: row wrap;
+
 
 
         }
-        
-
-
-    
-        
     </style>
 </head>
 
@@ -86,7 +85,7 @@
         <div class="inner1">inner8</div>
     </div>
     <hr>
-  
+
 
 
 
