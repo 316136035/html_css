@@ -28,7 +28,6 @@
     <style>
         .inner {
             width: 100px;
-            height: 100px;
             background-color: chartreuse;
             /* 边框 */
             border: 1px solid red;
@@ -37,9 +36,24 @@
 
         }
 
+        .inner1 {
+            height: 120px;
+
+        }
+
+        .inner2 {
+            height: 80px;
+
+        }
+
+        .inner3 {
+            height: 90px;
+
+        }
+
         .outer {
             width: 1000px;
-            height: 1000px;
+            height: 150px;
 
             background-color: dimgrey;
             /* 居中 */
@@ -60,9 +74,36 @@
             wrap-reverse 反向换行（注意：要使用对齐方式）
             */
             /* 复合写法:主轴方向-换行方式 */
-            flex-flow: column wrap;
+            flex-flow: row wrap;
 
 
+        }
+
+        /* 侧轴对齐方式 侧轴开始位置 上 （默认主轴的方向不变*）*/
+        .outer1 {
+            align-items: flex-start;
+        }
+
+        /* 侧轴对齐方式  侧轴中间位置 中 （默认主轴的方向不变*）*/
+        .outer2 {
+            align-items: center;
+        }
+
+        /* 侧轴对齐方式 侧轴结束位置 下 （默认主轴的方向不变*）*/
+        .outer3 {
+            align-items: flex-end;
+        }
+
+        /* 侧轴对齐方式 基线对齐 （默认主轴的方向不变*）*/
+        .outer4 {
+            align-items: baseline;
+        }
+
+        .outer5 {
+            /* 侧轴对齐方式 拉伸对齐 （默认）
+          当全部伸缩项目没有给高度就是生效
+          会拉伸到和拉伸容器一样的高度（默认主轴的方向不变*）*/
+            align-items: stretch;
         }
     </style>
 </head>
@@ -72,11 +113,44 @@
     <!-- 伸缩容器  -->
     <div class="outer outer1">
         <!-- 伸缩项目 -->
-        <div class="inner">flex-start</div>
-        <div class="inner">flex-start</div>
-        <div class="inner">flex-start</div>
-
+        <div class="inner inner1">flex-start侧轴开始位置 上</div>
+        <div class="inner inner2">flex-start侧轴开始位置 上</div>
+        <div class="inner inner3">flex-start侧轴开始位置 上</div>
     </div>
+    <hr>
+    <!-- 伸缩容器  -->
+    <div class="outer outer2">
+        <!-- 伸缩项目 -->
+        <div class="inner inner1">center侧轴中间位置 中</div>
+        <div class="inner inner2">center侧轴中间位置 中</div>
+        <div class="inner inner3">center侧轴中间位置 中</div>
+    </div>
+    <hr>
+    <!-- 伸缩容器  -->
+    <div class="outer outer3">
+        <!-- 伸缩项目 -->
+        <div class="inner inner1">flex-end侧轴结束位置 下</div>
+        <div class="inner inner2">flex-end侧轴结束位置 下</div>
+        <div class="inner inner3">flex-end侧轴结束位置 下</div>
+    </div>
+    <hr>
+    <!-- 伸缩容器  -->
+    <div class="outer outer4">
+        <!-- 伸缩项目 -->
+        <div class="inner inner1"> baseline基线对齐</div>
+        <div class="inner inner2"> baseline基线对齐</div>
+        <div class="inner inner3"> baseline基线对齐</div>
+    </div>
+    <hr>
+    <!-- 伸缩容器  -->
+    <div class="outer outer5">
+        <!-- 伸缩项目 -->
+        <div class="inner inner1">stretch 侧轴对齐方式 拉伸对齐 （默认）当全部伸缩项目没有给高度就是生效会拉伸到和拉伸容器一样的高度</div>
+        <div class="inner inner2">stretch侧轴对齐方式 拉伸对齐 （默认）当全部伸缩项目没有给高度就是生效会拉伸到和拉伸容器一样的高度</div>
+        <div class="inner inner3">stretch侧轴对齐方式 拉伸对齐 （默认）当全部伸缩项目没有给高度就是生效会拉伸到和拉伸容器一样的高度</div>
+    </div>
+    <hr>
+ 
 
 
 
