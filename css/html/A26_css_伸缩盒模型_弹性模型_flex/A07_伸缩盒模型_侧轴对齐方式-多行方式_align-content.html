@@ -55,7 +55,7 @@
         .outer {
             width: 1000px;
             height: 900px;
-           
+
 
             background-color: dimgrey;
             /* 居中 */
@@ -77,14 +77,23 @@
             */
             /* 复合写法:主轴方向-换行方式 */
             flex-flow: row wrap;
-
-            align-content: start;
-
-
+            /* 侧轴对齐方向 侧轴的起点位置整行垂直排序 （默认主轴的方向不变）*/
+            /* align-content: flex-start; */
+            /* 侧轴对齐方向 侧轴的结束位置整行垂直排序 （默认主轴的方向不变）*/
+            /* align-content: flex-end; */
+            /* 侧轴对齐方向 侧轴的中间位置整行垂直排序 （默认主轴的方向不变）*/
+            /* 侧轴对齐方向 侧轴靠左 中 靠右 */
+            align-content: space-between;
+            /* align-content: center; */
+            /* 侧轴对齐方向 侧轴空左→空*2 →中→空*2→右空 （主轴的方向不变） */
+            /* align-content: space-around; */
+            /* 轴对齐方向  侧轴均匀排列每个元素每个元素之间的间隔相等 （主轴的方向不变） */
+            /* align-content: space-evenly; */
+            /* 侧轴对齐方式 拉伸对齐 （默认）
+                当全部伸缩项目没有给高度就是生效
+                会拉伸到和拉伸容器一样的高度（默认主轴的方向不变*）*/
+            /* align-content: stretch; */
         }
-
-    
-
     </style>
 </head>
 
