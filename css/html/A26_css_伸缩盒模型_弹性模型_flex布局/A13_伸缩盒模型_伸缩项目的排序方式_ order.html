@@ -20,7 +20,7 @@
     <!-- Edge 模式通知 Windows Internet Explorer 以最高级别的可用模式显示内容   兼用性-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 头标题 -->
-    <title>A12_伸缩盒模型_拉伸性-压缩性-基准长度_复合写法_flex</title>
+    <title>A13_伸缩盒模型_伸缩项目的排序方式_ order</title>
     <!-- 设置网站图标调用一个外部的图片文件 -->
     <link rel="shortcut icon" href="../resources静态资源/img/favicon.ico" type="image/x-icon" />
     <!-- 调用一个外部的CSS样式文件 -->
@@ -28,7 +28,7 @@
     <style>
         .outer {
             width: 1000px;
-            height: 400px;
+            height: 1000px;
             background-color: dimgrey;
             /* 居中 */
             margin: 0 auto;
@@ -52,6 +52,7 @@
             width: 200px;
             height: 200px;
             background-color: chartreuse;
+            border: 1px solid black;
             /*
           伸缩盒模型_拉伸性-压缩性-基准长度_复合写法 flex复合属性
             是复合属性，复合了: flex-gTowflex-shripkflex~basis 三个属性，默认值为 0 1 auto。
@@ -62,29 +63,19 @@
             /* 用最多的是flex复合属性： 设置拉伸 设置压缩 基准长度是0   简写为  flex:1 */
             /* flex: 1 1 0; */
             flex: 1;
-
-
-
-
-
-
         }
 
         .inner1 {
-            background-color: rgb(0, 139, 69);
-
+            /*order默认值是0  数值越少就排越前 */
+            order: 1
         }
-
         .inner2 {
-
-            background-color: darkred;
-
-
+            /*order默认值是0  数值越少就排越前 */
+            order: 0;
         }
-
         .inner3 {
-            background-color: rgb(53, 0, 139);
-
+            /*order默认值是0  数值越少就排越前 */
+            order: -1;
         }
     </style>
 </head>
