@@ -27,8 +27,8 @@
     <link rel="stylesheet" href="#">
     <style>
         .outer {
-            width: 1200px;
-            height: 400px;
+            width: 1000px;
+            height: 200px;
             background-color: dimgrey;
             /* 居中 */
             margin: 0 auto;
@@ -49,21 +49,22 @@
         }
 
         .inner {
-            width: 200px;
-            height: 200px;
+            width: 100px;
+            height: 100px;
             background-color: chartreuse;
             /* 边框 */
             border: 1px solid black;
             /* 固定盒子大小 */
             box-sizing: border-box;
-            /* 全部伸缩项目平分伸缩容器剩余空间的宽度或者高度
+                       /* 全部伸缩项目平分伸缩容器剩余空间的宽度或者高度
             公式：
             伸缩容器剩余空间/flex-grow总和值*当前flex-grow值=伸缩项目的宽度或者高度*/
-            flex-grow: 1;
+            /* flex-grow: 1; */
 
         }
 
         .inner1 {
+
             /* 全部伸缩项目平分伸缩容器剩余空间的宽度或者高度
             公式：
             伸缩容器剩余空间/flex-grow总和值*当前flex-grow值=伸缩项目的宽度或者高度*/
@@ -72,7 +73,7 @@
         }
 
         .inner2 {
-            width: 300px;
+            width: 200px;
             background-color: darkred;
             /* 全部伸缩项目平分伸缩容器剩余空间的宽度或者高度
             公式：
@@ -80,11 +81,12 @@
             flex-grow: 2;
         }
 
-        .inner {
+        .inner3 {
             /* 全部伸缩项目平分伸缩容器剩余空间的宽度或者高度
             公式：
             伸缩容器剩余空间/flex-grow总和值*当前flex-grow值=伸缩项目的宽度或者高度*/
             flex-grow: 3;
+           
         }
     </style>
 </head>
