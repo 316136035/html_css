@@ -20,7 +20,7 @@
     <!-- Edge 模式通知 Windows Internet Explorer 以最高级别的可用模式显示内容   兼用性-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 头标题 -->
-    <title>A07_伸缩盒模型_侧轴对齐方式-多行方式_align-content</title>
+    <title>A12_伸缩盒模型_拉伸性-压缩性-基准长度_复合写法_flex</title>
     <!-- 设置网站图标调用一个外部的图片文件 -->
     <link rel="shortcut icon" href="../resources静态资源/img/favicon.ico" type="image/x-icon" />
     <!-- 调用一个外部的CSS样式文件 -->
@@ -52,19 +52,9 @@
             width: 200px;
             height: 200px;
             background-color: chartreuse;
-         
-            /* 全部伸缩项目平分伸缩容器剩余空间的宽度或者高度（默认值是0 关闭）
-            公式：
-            伸缩容器剩余空间/flex-grow总和值*当前flex-grow值=伸缩项目的宽度或者高度*/
-            flex-grow: 1;
-            /* （伸缩项目总宽度/高度）-伸缩容器=就会压缩 （默认开启）
-            方式：
-            分母： 伸缩项目1*压缩值+伸缩项目2*压缩值+伸缩项目3*压缩值=分母值
-                  （伸缩项目*压缩值）/分母值=压缩比
-                  压缩值*（（伸缩项目总宽度/高度）-伸缩容器）=压缩值
-
-             */
-            flex-shrink: 1;
+            /* 伸缩盒模型_拉伸性-压缩性-基准长度_复合写法(按照以上顺序填写) */
+             flex: 1 1 100%;
+          
 
 
         }
@@ -75,7 +65,7 @@
         }
 
         .inner2 {
-            width: 300px;
+         
             background-color: darkred;
 
 
