@@ -28,7 +28,7 @@
     <style>
         .outer {
             width: 1000px;
-            height: 200px;
+            height: 400px;
             background-color: dimgrey;
             /* 居中 */
             margin: 0 auto;
@@ -43,50 +43,47 @@
             nowrap 不换行（默认）
             wrap 换行（注意：要使用对齐方式）
             wrap-reverse 反向换行（注意：要使用对齐方式）*/
-            flex-wrap: wrap;
+            /* flex-wrap: wrap; */
             /* 主轴的起点位置排序-左对齐 （默认主轴的方向不变）*/
             justify-content: flex-start;
         }
 
         .inner {
-            width: 100px;
-            height: 100px;
+            width: 200px;
+            height: 200px;
             background-color: chartreuse;
-            /* 边框 */
-            border: 1px solid black;
-            /* 固定盒子大小 */
-            box-sizing: border-box;
+         
             /* 全部伸缩项目平分伸缩容器剩余空间的宽度或者高度（默认值是0 关闭）
             公式：
             伸缩容器剩余空间/flex-grow总和值*当前flex-grow值=伸缩项目的宽度或者高度*/
-            /* flex-grow: 1; */
+            flex-grow: 1;
+            /* （伸缩项目总宽度/高度）-伸缩容器=就会压缩 （默认开启）
+            方式：
+            分母： 伸缩项目1*压缩值+伸缩项目2*压缩值+伸缩项目3*压缩值=分母值
+                  伸缩项目/分母值=压缩比
+                  压缩值*（（伸缩项目总宽度/高度）-伸缩容器）=压缩值
+
+             */
+            flex-shrink: 1;
+
 
         }
 
         .inner1 {
-
-            /* 全部伸缩项目平分伸缩容器剩余空间的宽度或者高度
-            公式：
-            伸缩容器剩余空间/flex-grow总和值*当前flex-grow值=伸缩项目的宽度或者高度*/
-            flex-grow: 1;
+            background-color: rgb(0, 139, 69);
 
         }
 
         .inner2 {
-            width: 200px;
+            width: 300px;
             background-color: darkred;
-            /* 全部伸缩项目平分伸缩容器剩余空间的宽度或者高度
-            公式：
-            伸缩容器剩余空间/flex-grow总和值*当前flex-grow值=伸缩项目的宽度或者高度*/
-            flex-grow: 2;
+
+
         }
 
         .inner3 {
-            /* 全部伸缩项目平分伸缩容器剩余空间的宽度或者高度
-            公式：
-            伸缩容器剩余空间/flex-grow总和值*当前flex-grow值=伸缩项目的宽度或者高度*/
-            flex-grow: 3;
-           
+            background-color: rgb(53, 0, 139);
+
         }
     </style>
 </head>
