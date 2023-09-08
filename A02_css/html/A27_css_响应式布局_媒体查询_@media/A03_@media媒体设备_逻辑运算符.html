@@ -48,7 +48,7 @@
         tv	表示电视机类型的设备  */
 
 
-        /* and 并且 运算法
+        /* and 并且运算法
         max-width 为大于
         min-width 为小于*/
         @media screen and (min-width:600px) and (max-width:800px) {
@@ -61,10 +61,37 @@
 
         }
 
-        /* or  或者 运算法
+        /* or  或者运算法
          max-width 为大于
         min-width 为小于*/
         @media (min-width:600px) or (max-width:800px) {
+
+            div {
+                /* 线性颜色渐变 颜色可以无限添加 （to 终点位置, 位置） */
+                background-image: linear-gradient(to right top, red, rgb(255, 0, 115), green);
+            }
+
+
+        }
+
+
+        /* not  否定运算法
+         max-width 为大于
+        min-width 为小于*/
+        @media not screen {
+
+            div {
+                /* 线性颜色渐变 颜色可以无限添加 （to 终点位置, 位置） */
+                background-image: linear-gradient(to right top, red, rgb(255, 0, 115), green);
+            }
+
+
+        }
+
+        /* only 肯定运算法
+         max-width 为大于
+        min-width 为小于*/
+        @media  only screen {
 
             div {
                 /* 线性颜色渐变 颜色可以无限添加 （to 终点位置, 位置） */
