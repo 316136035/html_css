@@ -119,7 +119,7 @@ body {
     width: 180px;
     height: 300px;
     /* background-color: chartreuse; */
-    /* border: 1px solid black; */
+    border: 1px solid black;
     background-color: rgba(213, 216, 12, 0.796);
     /* 开启flex布局 */
     display: flex;
