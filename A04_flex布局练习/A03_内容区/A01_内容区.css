@@ -100,8 +100,51 @@ body {
 }
 
 /*#endregion----------- 头部 结束 */
+
+
 /* #region -------内容区 开始 */
+.content-nav {
+    /* 视图高度的 -头部的高度 */
+    height: calc(100vh - 100px);
+    /* 开启 flex布局 */
+    display: flex;
+    /*  flex布局：均匀排列每个元素， 每个元素之间的间隔相等 */
+    justify-content: space-evenly;
+    /*  flex布局：单行垂直居中*/
+    align-items: center;
+
+}
+
+.content-item {
+    width: 180px;
+    height: 300px;
+    /* background-color: chartreuse; */
+    /* border: 1px solid black; */
+    background-color: rgba(213, 216, 12, 0.796);
+    /* 开启flex布局 */
+    display: flex;
+    /* 主轴的方向：
+     row  水平正常方向 左→右 （默认）
+      row-reverse 水平反转 右→左 
+      column 垂直正常方向 上→下 
+    column-reverse 垂直正常方向 下→上*/
+    flex-direction: column;
+    /*flex布局：主轴对齐方式 */
+    justify-content: space-evenly;
+    /*flex布局：侧轴对齐方式-多行方式 居中 */
+    align-content: center;
+  
+
+}
+.content-item>div{
+
+    /* 字体大小 */
+    font-size: 20px;
+      /*文字居中 */
+      text-align: center;
+}
+
+
 
 
 /*#endregion----------- 内容区 结束 */
-
