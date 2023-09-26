@@ -16,21 +16,24 @@
     <!--内部样式（css选择器使用内部样式显示）-->
     <style>
         table {
+            /* 视图宽度 */
+            width: calc(100%);
+            ;
             /* 设置标题位置 
             top 头部
             bottom 尾部*/
             caption-side: top;
-             /* 边框样式组合写法 (边框样式,边框宽度,边框颜色) （通用边框属性）*/
+            /* 边框样式组合写法 (边框样式,边框宽度,边框颜色) （通用边框属性）*/
             border: solid 2px rgb(100, 0, 0);
             /* 设置表单列宽  auto 自动的  fixed固定的*/
-            table-layout:  auto;
+            table-layout: auto;
             /* 设置单元格之间的边框距离（前提不能使用合并单元格之间的边框） */
             /* border-spacing: 0px; */
             /*  合并单元格之间的边框 （设置单元格之间的边框距离就不生效了）*/
             border-collapse: collapse;
             /* 隐藏没有内容的单元格 （前提不能使用合并单元格之间的边框*/
             empty-cells: hide;
-          
+
 
 
         }
@@ -42,8 +45,6 @@
 
 
         }
-
-       
     </style>
 </head>
 
@@ -92,7 +93,7 @@
 
     </table>
     <hr>
- 
+
     <!-- <script type="text/javascript" src="#">    /*javascript代码  */</script> -->
 
 </body>
