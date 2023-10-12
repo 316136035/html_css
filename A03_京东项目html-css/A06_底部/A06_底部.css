@@ -198,6 +198,8 @@
     text-align: center;
     /* 字符垂直居中 */
     line-height: 36px;
+    /* 设置边框圆角 */
+    border-radius: 5px;
 
 }
 
