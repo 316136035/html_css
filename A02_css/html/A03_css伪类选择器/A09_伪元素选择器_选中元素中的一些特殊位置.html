@@ -47,6 +47,12 @@
         .beforeafter::after {
             content: ".00";
         }
+        /* 通过类获取类元素，获取选中的元素 */
+        .checkbox:checked{
+            width: 40px;
+            height: 40px;
+        }
+
     </style>
 
 </head>
@@ -66,6 +72,8 @@
         <input type="text" placeholder="请输入用户名..">
 
         <div class="beforeafter">99</div>
+
+        <input type="checkbox" name="" id="" class="checkbox" checked>
 
     </div>
 
